@@ -1,0 +1,41 @@
+.card{
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70px;
+    margin: 80px 340px;
+    border-radius: 10px;
+    color: rgb(31, 31, 31);
+    
+    background: rgb(45,193,252);
+    background: linear-gradient(90deg, rgba(45,193,252,1) 0%, rgba(36,149,255,1) 100%);
+}
+
+.card img{
+    height: 600px;
+    width: 600px;
+    object-fit: cover;
+}
+
+.card p{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.card h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.card button{
+    background: rgb(31, 31, 31);
+    color: white;
+    border: none;
+    padding: 20px 40px;
+}
+
+.card button:hover{
+    color: rgb(31, 31, 31);
+    background: rgb(255, 255, 255);
+}

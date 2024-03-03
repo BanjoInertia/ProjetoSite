@@ -1,0 +1,38 @@
+.displayedProductContainer {
+    height: 75vh;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 0 18%;
+    color: white;
+    z-index: -2;
+}
+
+.displayedProductContainer h1{
+    font-size: 4.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.displayedProductContainer p{
+    width: 500px;
+    font-size: 25px;
+    text-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.displayedProductContainer button{
+    background: rgb(38, 141, 179);
+    color: white;
+    border: none;
+    padding: 20px 40px;
+}
+
+.displayedProductContainer button:hover{
+    background: black;
+}
+
+.productImage {
+    width: 45%;
+}

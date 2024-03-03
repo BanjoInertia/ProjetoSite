@@ -1,0 +1,25 @@
+.headerContainer {
+    position: relative;
+    height: 15vh;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    padding: 0 18%;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: 5;
+}
+
+.header {  
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 3px white;
+}
+
+.headerOptions {
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+}
