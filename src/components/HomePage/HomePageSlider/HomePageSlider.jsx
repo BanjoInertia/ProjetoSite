@@ -6,15 +6,7 @@ import 'swiper/css/pagination';
 
 import classes from "./HomePageSlider.module.css"
 
-import img1 from "../../../assets/SoulFighterJhin.png"
-import img2 from "../../../assets/DarkCosmicJhin.png"
-import img3 from "../../../assets/EmpyreanJhin.png"
-import img4 from "../../../assets/PROJECTJhin.png"
-import img5 from "../../../assets/OldWestJhin.png"
-import img6 from "../../../assets/ShanHaiScrollsJhin.png"
-import img7 from "../../../assets/BloodMoonJhin.png"
-
-const items = [img1, img2, img3, img4, img5, img6, img7]
+import products from "../../../../public/data.json"
 
 export const HomePageSlider = () => {
     return (
@@ -46,16 +38,15 @@ export const HomePageSlider = () => {
                 modules={[Autoplay, Pagination]}
                 className={classes.swiper}
             >
-                {items.map((item, index) => (
+                {products.map((product, index) => (
                     <SwiperSlide className={classes.cards} key={index}>
-                        <div className={classes.imgContainer}>
-                            <img className={classes.img} src={item} />
+                        <div className={classes.img_container}>
+                            <img className={classes.img} src={product.image} alt={product.productName} />
                         </div>
-                        <a className={classes.productName}>Jhin Soulfighter</a>
-                        <p>R$200,00</p>
+                        <p className={classes.product_name}>{product.productName}</p>
+                        <p>R${product.price}</p>
                     </SwiperSlide>
                 ))}
-
             </Swiper>
         </>
     )

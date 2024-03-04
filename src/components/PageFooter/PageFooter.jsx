@@ -2,7 +2,7 @@ import classes from "./PageFooter.module.css"
 
 export const PageFooter = () => {
     return (
-        <footer className={classes.footerContainer}>
+        <footer className={classes.footer_container}>
             <div>
                 <div>
                     <h3>JIMMY</h3>

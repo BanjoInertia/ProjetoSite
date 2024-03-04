@@ -1,4 +1,4 @@
-.displayedProductContainer {
+.displayed_product_container {
     height: 75vh;
     background-color: rgb(31, 31, 31);
     display: flex;
@@ -9,30 +9,30 @@
     z-index: -2;
 }
 
-.displayedProductContainer h1{
+.displayed_product_container h1{
     font-size: 4.5em;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
-.displayedProductContainer p{
+.displayed_product_container p{
     width: 500px;
     font-size: 25px;
     text-wrap: wrap;
     margin-bottom: 40px;
 }
 
-.displayedProductContainer button{
+.displayed_product_container button{
     background: rgb(38, 141, 179);
     color: white;
     border: none;
     padding: 20px 40px;
 }
 
-.displayedProductContainer button:hover{
+.displayed_product_container button:hover{
     background: black;
 }
 
-.productImage {
+.product_image {
     width: 45%;
 }

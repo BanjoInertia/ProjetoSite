@@ -4,8 +4,9 @@
     align-items: center;
     flex-direction: column;
     max-width: 1200px;
-    min-height: 80vh;
-    font-size: 20px;
+    min-height: 70vh;
+    margin-top: 50px;
+    font-size: 22px;
     font-weight: 700;
 }
 
@@ -18,7 +19,7 @@
     user-select: none;
 }
 
-.imgContainer {
+.img_container {
     width: 350px;
     height: 420px;
     display: flex;
@@ -33,7 +34,7 @@
     object-position: center;
 }
 
-.productName {
+.product_name {
     margin-top: 20px;
     margin-bottom: 5px;
     letter-spacing: 2px;

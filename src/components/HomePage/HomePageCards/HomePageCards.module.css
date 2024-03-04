@@ -4,10 +4,9 @@
     justify-content: space-around;
     align-items: center;
     gap: 70px;
-    margin: 80px 340px;
+    margin: 150px 340px;
     border-radius: 10px;
     color: rgb(31, 31, 31);
-    
     background: rgb(45,193,252);
     background: linear-gradient(90deg, rgba(45,193,252,1) 0%, rgba(36,149,255,1) 100%);
 }
