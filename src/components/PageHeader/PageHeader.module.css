@@ -3,7 +3,6 @@
     height: 15vh;
     background-color: rgb(31, 31, 31);
     color: white;
-    padding: 0 18%;
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
@@ -13,7 +12,8 @@
 .header {  
     height: 15vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 15%;
     align-items: center;
     border-bottom: solid 3px white;
 }

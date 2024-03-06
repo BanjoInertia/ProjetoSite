@@ -1,35 +1,42 @@
 [
     {
+        "id": 0,
         "image": "../src/assets/SoulFighterJhin.png",
         "productName": "SoulFighter Jhin",
         "price": "200,00"
     },
     {
+        "id": 1,
         "image": "../src/assets/DarkCosmicJhin.png",
         "productName": "Dark Cosmic Jhin",
         "price": "200,00"
     },
     {
+        "id": 2,
         "image": "../src/assets/EmpyreanJhin.png",
         "productName": "Empyrean Jhin",
         "price": "200,00"
     },
     {
+        "id": 3,
         "image": "../src/assets/PROJECTJhin.png",
         "productName": "PROJECT Jhin",
         "price": "200,00"
     },
     {
+        "id": 4,
         "image": "../src/assets/OldWestJhin.png",
         "productName": "Old West Jhin",
         "price": "200,00"
     },
     {
+        "id": 5,
         "image": "../src/assets/ShanHaiScrollsJhin.png",
         "productName": "Shan Hai Scrolls Jhin",
         "price": "200,00"
     },
     {
+        "id": 6,
         "image": "../src/assets/BloodMoonJhin.png",
         "productName": "Blood Moon Jhin",
         "price": "200,00"

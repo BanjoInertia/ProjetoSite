@@ -7,20 +7,21 @@ import 'swiper/css/pagination';
 import classes from "./HomePageSlider.module.css"
 
 import products from "../../../../public/data.json"
+import { Link } from 'react-router-dom';
 
 export const HomePageSlider = () => {
     return (
         <>
             <Swiper
                 slidesPerView={3}
-                spaceBetween={30}
+                spaceBetween={70}
                 pagination={{
                     clickable: true,
                 }}
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                  }}
+                // autoplay={{
+                //     delay: 2500,
+                //     disableOnInteraction: false,
+                // }}
                 breakpoints={{
                     640: {
                         slidesPerView: 1,
@@ -39,12 +40,12 @@ export const HomePageSlider = () => {
                 className={classes.swiper}
             >
                 {products.map((product, index) => (
-                    <SwiperSlide className={classes.cards} key={index}>
-                        <div className={classes.img_container}>
+                    <SwiperSlide key={index}>
+                        <Link className={classes.cards} to={`/product/${product.id}`} >
                             <img className={classes.img} src={product.image} alt={product.productName} />
-                        </div>
-                        <p className={classes.product_name}>{product.productName}</p>
-                        <p>R${product.price}</p>
+                            <p className={classes.product_name}>{product.productName}</p>
+                            <p>R${product.price}</p>
+                        </Link>
                     </SwiperSlide>
                 ))}
             </Swiper>
