@@ -7,13 +7,6 @@
     padding: 0 330px;
 }
 
-.img {
-    width: 500px;
-    height: 500px;
-    border-radius: 5px;
-    object-fit: cover;
-}
-
 .product_information {
     margin-left: 70px;
 }
