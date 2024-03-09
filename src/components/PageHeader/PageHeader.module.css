@@ -24,3 +24,28 @@
     gap: 30px;
     font-size: 25px;
 }
+
+.ProductCartContainer {
+    background: none;
+    border: none;
+    position: relative;
+}
+
+.ProductCartContainer img {
+    width: 40px;
+}
+
+.ProductCartContainer div {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 50px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(25%, 25%);
+}
