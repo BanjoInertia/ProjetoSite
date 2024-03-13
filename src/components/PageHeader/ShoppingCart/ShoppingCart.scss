@@ -1,0 +1,15 @@
+@import 'bootstrap/scss/bootstrap-utilities';
+@import 'bootstrap/scss/close';
+@import 'bootstrap/scss/buttons';
+
+@import 'bootstrap/scss/offcanvas';
+
+.cart {
+    width: 450px !important;
+    background: rgb(31, 31, 31);
+    color: white;
+}
+
+.cart_tittle {
+    font-size: 30px;
+}

@@ -3,7 +3,7 @@ import { HomePage } from './homePage'
 import { ProductDetailsPage } from './ProductDetailsPage'
 import { PageHeader } from '../components/PageHeader/PageHeader'
 import { PageFooter } from '../components/PageFooter/PageFooter'
-import { ShoppingCartProvider } from '../context/ShoppingCart'
+import { ShoppingCartProvider } from '../context/ShoppingCartContext'
 
 export const AppRoutes = () => {
     return (

@@ -1,20 +1,36 @@
 import PropTypes from 'prop-types';
-import { Offcanvas } from "react-bootstrap"
-import { useShoppingCart } from "../../../context/ShoppingCart"
-import  "bootstrap/dist/css/bootstrap.min.css"
+import { Offcanvas, Stack } from "react-bootstrap"
+import { useShoppingCart } from "../../../context/ShoppingCartContext"
+import "./ShoppingCart.scss"
+import { CartItem } from './CartItem/CartItem';
+import Products from "/public/data.json"
+import { formatCurrancy } from '../../../utilities/formatCurrancy';
 
 export const ShoppingCart = ({ isOpen }) => {
-    const { closeCart } = useShoppingCart()
+    const { closeCart, cartItems } = useShoppingCart()
     return (
-        <Offcanvas show={isOpen} onHide={closeCart} placement='end'>
-            <Offcanvas.Header closeButton>
-                <Offcanvas.Title>
-                    Cart
-                </Offcanvas.Title>
-                <Offcanvas.Body>
-                    dasdas
-                </Offcanvas.Body>
+        <Offcanvas className='cart' show={isOpen} onHide={closeCart} placement='end'>
+            <Offcanvas.Header closeButton closeVariant='white'>
+                <Offcanvas.Title className='cart_tittle'>Cart</Offcanvas.Title>
             </Offcanvas.Header>
+            <Offcanvas.Body>
+                <Stack gap={3}>
+                    {
+                        cartItems.map(item => (
+                            <CartItem key={item.id} {...item} />
+                        ))
+                    }
+                    <div className='ms-auto fw-bold fs-4'>
+                        Total {" "}
+                        {formatCurrancy(
+                            cartItems.reduce((total, cartItem) => {
+                                const item = Products.find(item => item.id === cartItem.id)
+                                return total + (item?.price || 0)
+                            }, 0)
+                        )}
+                    </div>
+                </Stack>
+            </Offcanvas.Body>
         </Offcanvas>
     )
 }

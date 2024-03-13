@@ -1,51 +1,93 @@
 [
     {
         "id": 0,
-        "image": "../src/assets/SoulFighterJhin.png",
+        "imageURLs": 
+        [
+            "../src/assets/SoulFighterJhin.png",
+            "../src/assets/SoulFighterJhin.png",
+            "../src/assets/SoulFighterJhin.png",
+            "../src/assets/SoulFighterJhin.png"
+        ],
         "productName": "Soul Fighter Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
-        "price": "200,00"
+        "price": 200
     },
     {
         "id": 1,
-        "image": "../src/assets/DarkCosmicJhin.png",
+        "imageURLs": 
+        [
+            "../src/assets/DarkCosmicJhin.png",
+            "../src/assets/DarkCosmicJhin.png",
+            "../src/assets/DarkCosmicJhin.png",
+            "../src/assets/DarkCosmicJhin.png"
+        ],
         "productName": "Dark Cosmic Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
-        "price": "200,00"
+        "price": 200
     },
     {
         "id": 2,
-        "image": "../src/assets/EmpyreanJhin.png",
+        "imageURLs": 
+        [
+            "../src/assets/EmpyreanJhin.png",
+            "../src/assets/EmpyreanJhin.png",
+            "../src/assets/EmpyreanJhin.png",
+            "../src/assets/EmpyreanJhin.png"
+        ],
         "productName": "Empyrean Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
-        "price": "200,00"
+        "price": 200
     },
     {
         "id": 3,
-        "image": "../src/assets/PROJECTJhin.png",
+        "imageURLs": 
+        [
+            "../src/assets/PROJECTJhin.png",
+            "../src/assets/PROJECTJhin.png",
+            "../src/assets/PROJECTJhin.png",
+            "../src/assets/PROJECTJhin.png"
+        ],
         "productName": "PROJECT Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
-        "price": "200,00"
+        "price": 200
     },
     {
         "id": 4,
-        "image": "../src/assets/OldWestJhin.png",
+        "imageURLs": 
+        [
+            "../src/assets/OldWestJhin.png",
+            "../src/assets/OldWestJhin.png",
+            "../src/assets/OldWestJhin.png",
+            "../src/assets/OldWestJhin.png"
+        ],
         "productName": "Old West Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
-        "price": "200,00"
+        "price": 200
     },
     {
         "id": 5,
-        "image": "../src/assets/ShanHaiScrollsJhin.png",
+        "imageURLs": 
+        [
+            "../src/assets/ShanHaiScrollsJhin.png",
+            "../src/assets/ShanHaiScrollsJhin.png",
+            "../src/assets/ShanHaiScrollsJhin.png",
+            "../src/assets/ShanHaiScrollsJhin.png"
+        ],
         "productName": "Shan Hai Scrolls Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
-        "price": "200,00"
+        "price": 200
     },
     {
         "id": 6,
-        "image": "../src/assets/BloodMoonJhin.png",
+        "imageURLs": 
+        [
+            "../src/assets/BloodMoonJhin.png",
+            "../src/assets/BloodMoonJhin.png",
+            "../src/assets/BloodMoonJhin.png",
+            "../src/assets/BloodMoonJhin.png"
+        ],
         "productName": "Blood Moon Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
-        "price": "200,00"
+        "price": 200
     }
 ]

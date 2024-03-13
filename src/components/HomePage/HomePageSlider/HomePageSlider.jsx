@@ -8,6 +8,7 @@ import classes from "./HomePageSlider.module.css"
 
 import products from "../../../../public/data.json"
 import { Link } from 'react-router-dom';
+import { formatCurrancy } from '../../../utilities/formatCurrancy';
 
 export const HomePageSlider = () => {
     return (
@@ -18,10 +19,10 @@ export const HomePageSlider = () => {
                 pagination={{
                     clickable: true,
                 }}
-                // autoplay={{
-                //     delay: 2500,
-                //     disableOnInteraction: false,
-                // }}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
                 breakpoints={{
                     640: {
                         slidesPerView: 1,
@@ -42,9 +43,9 @@ export const HomePageSlider = () => {
                 {products.map((product, index) => (
                     <SwiperSlide key={index}>
                         <Link className={classes.cards} to={`/product/${product.id}`} >
-                            <img className={classes.img} src={product.image} alt={product.productName} />
+                            <img className={classes.img} src={product.imageURLs[0]} alt={product.productName} />
                             <p className={classes.product_name}>{product.productName}</p>
-                            <p>R${product.price}</p>
+                            <p>{formatCurrancy(product.price)}</p>
                         </Link>
                     </SwiperSlide>
                 ))}

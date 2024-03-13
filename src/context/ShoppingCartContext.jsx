@@ -1,15 +1,9 @@
-import { createContext, useContext, useState } from "react";
 import { ShoppingCart } from "../components/PageHeader/ShoppingCart/ShoppingCart";
+import { createContext, useContext, useState } from "react";
 import PropTypes from "prop-types";
 
 const initialContext = {
   openCart: () => {},
-  closeCart: () => {},
-  getItemQuantity: (id) => 0,
-  increaseCartQuantity: (id) => {},
-  removeFromCart: (id) => {},
-  cartQuantity: () => 0,
-  cartItems: [],
 };
 
 export const ShoppingCartContext = createContext(initialContext);
@@ -22,7 +16,6 @@ export function ShoppingCartProvider({ children }) {
   const [isOpen, setIsOpen] = useState(false)
   const [cartItems, setCartItems] = useState([]);
 
-
   const cartQuantity = cartItems.reduce((quantity, item) => item.quantity + quantity, 0)
 
   const openCart = () => setIsOpen(true)
@@ -34,17 +27,15 @@ export function ShoppingCartProvider({ children }) {
 
   function increaseCartQuantity(id) {
     setCartItems((currItems) => {
-      const existingItem = currItems.find((item) => item.id === id);
-      if (existingItem === undefined) {
+      const existingIndex = currItems.findIndex((item) => item.id === id);
+      if (existingIndex === -1) {
         return [...currItems, { id, quantity: 1 }];
       } else {
-        return currItems.map((item) => {
-          if (item.id === id) {
-            return { ...item, quantity: item.quantity + 1 };
-          } else {
-            return item;
-          }
-        });
+        const updatedItems = [...currItems];
+        if (updatedItems[existingIndex].quantity < 1) {
+          updatedItems[existingIndex].quantity += 1;
+        }
+        return updatedItems;
       }
     });
   }

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import classes from './PageHeader.module.css';
 import ProductCartImage from "../../assets/cart-svgrepo-com.svg";
-import { useShoppingCart } from '../../context/ShoppingCart';
+import { useShoppingCart } from '../../context/ShoppingCartContext';
 
 export const PageHeader = () => {
     const { openCart, cartQuantity } = useShoppingCart()
@@ -25,7 +25,11 @@ export const PageHeader = () => {
                 </ul>
                 <button className={classes.ProductCartContainer} onClick={openCart}>
                     <img src={ProductCartImage} alt="Description of the SVG" />
-                    <div>{cartQuantity}</div>
+                    {
+                        cartQuantity > 0 && (
+                            <div>{cartQuantity}</div>
+                        )
+                    }
                 </button>
             </section>
         </nav>
