@@ -1,9 +1,9 @@
-import { useShoppingCart } from "../../../../context/ShoppingCartContext"
 import { formatCurrancy } from "../../../../utilities/formatCurrancy"
 import { Button, Stack } from "react-bootstrap"
 import Products from "../../../../../public/data.json"
 import classes from "./CartItem.module.css"
 import PropTypes from 'prop-types';
+import { useShoppingCart } from "../../../../context/useShoppingCart";
 
 export const CartItem = ({ id }) => {
     const { removeFromCart } = useShoppingCart()

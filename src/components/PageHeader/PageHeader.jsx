@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import classes from './PageHeader.module.css';
 import ProductCartImage from "../../assets/cart-svgrepo-com.svg";
-import { useShoppingCart } from '../../context/ShoppingCartContext';
+import { useShoppingCart } from '../../context/useShoppingCart';
 
 export const PageHeader = () => {
     const { openCart, cartQuantity } = useShoppingCart()

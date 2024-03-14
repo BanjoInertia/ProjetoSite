@@ -1,6 +1,7 @@
-import { ShoppingCart } from "../components/PageHeader/ShoppingCart/ShoppingCart";
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
 import PropTypes from "prop-types";
+import { useLocalStorage } from "../hooks/useLocalStorage";
+import { ShoppingCart } from "../components/PageHeader/ShoppingCart/ShoppingCart";
 
 const initialContext = {
   openCart: () => {},
@@ -8,18 +9,14 @@ const initialContext = {
 
 export const ShoppingCartContext = createContext(initialContext);
 
-export function useShoppingCart() {
-  return useContext(ShoppingCartContext);
-}
+export const ShoppingCartProvider = ({ children }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [cartItems, setCartItems] = useLocalStorage([]);
 
-export function ShoppingCartProvider({ children }) {
-  const [isOpen, setIsOpen] = useState(false)
-  const [cartItems, setCartItems] = useState([]);
+  const cartQuantity = cartItems.reduce((quantity, item) => item.quantity + quantity, 0);
 
-  const cartQuantity = cartItems.reduce((quantity, item) => item.quantity + quantity, 0)
-
-  const openCart = () => setIsOpen(true)
-  const closeCart = () => setIsOpen(false)
+  const openCart = () => setIsOpen(true);
+  const closeCart = () => setIsOpen(false);
 
   function getItemQuantity(id) {
     return cartItems.find((item) => item.id === id)?.quantity || 0;
@@ -39,7 +36,7 @@ export function ShoppingCartProvider({ children }) {
       }
     });
   }
-  
+
   function removeFromCart(id) {
     setCartItems((currItems) => {
       return currItems.filter((item) => item.id !== id);
@@ -54,7 +51,7 @@ export function ShoppingCartProvider({ children }) {
       <ShoppingCart isOpen={isOpen} />
     </ShoppingCartContext.Provider>
   );
-}
+};
 
 ShoppingCartProvider.propTypes = {
   children: PropTypes.node.isRequired,

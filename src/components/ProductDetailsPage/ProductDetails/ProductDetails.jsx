@@ -3,8 +3,8 @@ import classes from "./ProductDetails.module.css"
 import PropTypes from 'prop-types';
 import { ProductDetailsImageSlider } from '../ProductDetailsImageSlider/ProductDetailsImageSlider';
 import { useEffect } from "react";
-import { useShoppingCart } from '../../../context/ShoppingCartContext';
 import { formatCurrancy } from '../../../utilities/formatCurrancy';
+import { useShoppingCart } from '../../../context/useShoppingCart';
 
 export const ProductDetails = ({ id }) => {
     const productId = parseInt(id); // Convert id to number

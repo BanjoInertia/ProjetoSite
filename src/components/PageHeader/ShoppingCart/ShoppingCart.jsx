@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import { Offcanvas, Stack } from "react-bootstrap"
-import { useShoppingCart } from "../../../context/ShoppingCartContext"
 import "./ShoppingCart.scss"
 import { CartItem } from './CartItem/CartItem';
 import Products from "/public/data.json"
 import { formatCurrancy } from '../../../utilities/formatCurrancy';
+import { useShoppingCart } from '../../../context/useShoppingCart';
 
 export const ShoppingCart = ({ isOpen }) => {
     const { closeCart, cartItems } = useShoppingCart()
