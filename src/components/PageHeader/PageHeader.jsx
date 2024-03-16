@@ -14,7 +14,7 @@ export const PageHeader = () => {
                         <Link to="/">home</Link>
                     </li>
                     <li>
-                        <Link to="/">blitzcrank</Link>
+                        <Link to="/products">products</Link>
                     </li>
                     <li>
                         <Link to="/">soulfighter</Link>

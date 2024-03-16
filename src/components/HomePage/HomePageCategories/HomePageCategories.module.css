@@ -1,15 +1,12 @@
-.categorias{
-    margin: 150px;
-}
-
 .categorias_card{
     display: grid;
     justify-content: center;
     grid-template-areas:
-        "one two"
-        "one three";
+    "one two"
+    "one three";
     gap: 20px;
     color: white;
+    margin: 150px;
 }
 
 .img1, .img2, .img3 {
