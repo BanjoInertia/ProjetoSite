@@ -10,6 +10,7 @@
         ],
         "productName": "Soul Fighter Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
+        "rarity": "epic",
         "price": 200
     },
     {
@@ -23,6 +24,7 @@
         ],
         "productName": "Dark Cosmic Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
+        "rarity": "legendary",
         "price": 200
     },
     {
@@ -36,6 +38,7 @@
         ],
         "productName": "Empyrean Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
+        "rarity": "epic",
         "price": 200
     },
     {
@@ -49,6 +52,7 @@
         ],
         "productName": "PROJECT Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
+        "rarity": "epic",
         "price": 200
     },
     {
@@ -62,6 +66,7 @@
         ],
         "productName": "Old West Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
+        "rarity": "epic",
         "price": 200
     },
     {
@@ -75,6 +80,7 @@
         ],
         "productName": "Shan Hai Scrolls Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
+        "rarity": "epic",
         "price": 200
     },
     {
@@ -88,6 +94,7 @@
         ],
         "productName": "Blood Moon Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
+        "rarity": "",
         "price": 200
     }
 ]
