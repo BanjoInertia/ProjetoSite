@@ -1,8 +1,8 @@
 import classes from "./HomePageCategories.module.css"
 
-import categoryImg1 from "../../../assets/SoulFighterJhin.png"
-import categoryImg2 from "../../../assets/OldWestJhin.png"
-import categoryImg3 from "../../../assets/DarkCosmicJhin.png"
+import categoryImg1 from "../../../assets/product_assets/SoulFighterJhin.png"
+import categoryImg2 from "../../../assets/product_assets/OldWestJhin.png"
+import categoryImg3 from "../../../assets/product_assets/DarkCosmicJhin.png"
 
 export const HomePageCategories = () => {
     return (

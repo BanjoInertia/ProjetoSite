@@ -1,9 +1,9 @@
-import { ProductList } from "../components/ProductListPage/ProductList/ProductList"
+import { FilteredProductList } from "../components/ProductListPage/FilteredProductList/FilteredProductList"
 
 export const ProductListPage = () => {
     return (
         <>
-            <ProductList />
+            <FilteredProductList />
         </>
     )
 }

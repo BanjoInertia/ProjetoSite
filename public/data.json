@@ -3,10 +3,10 @@
         "id": 0,
         "imageURLs": 
         [
-            "../src/assets/SoulFighterJhin.png",
-            "../src/assets/SoulFighterJhin.png",
-            "../src/assets/SoulFighterJhin.png",
-            "../src/assets/SoulFighterJhin.png"
+            "../src/assets/product_assets/SoulFighterJhin.png",
+            "../src/assets/product_assets/SoulFighterJhin.png",
+            "../src/assets/product_assets/SoulFighterJhin.png",
+            "../src/assets/product_assets/SoulFighterJhin.png"
         ],
         "productName": "Soul Fighter Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
@@ -17,10 +17,10 @@
         "id": 1,
         "imageURLs": 
         [
-            "../src/assets/DarkCosmicJhin.png",
-            "../src/assets/DarkCosmicJhin.png",
-            "../src/assets/DarkCosmicJhin.png",
-            "../src/assets/DarkCosmicJhin.png"
+            "../src/assets/product_assets/DarkCosmicJhin.png",
+            "../src/assets/product_assets/DarkCosmicJhin.png",
+            "../src/assets/product_assets/DarkCosmicJhin.png",
+            "../src/assets/product_assets/DarkCosmicJhin.png"
         ],
         "productName": "Dark Cosmic Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
@@ -31,10 +31,10 @@
         "id": 2,
         "imageURLs": 
         [
-            "../src/assets/EmpyreanJhin.png",
-            "../src/assets/EmpyreanJhin.png",
-            "../src/assets/EmpyreanJhin.png",
-            "../src/assets/EmpyreanJhin.png"
+            "../src/assets/product_assets/EmpyreanJhin.png",
+            "../src/assets/product_assets/EmpyreanJhin.png",
+            "../src/assets/product_assets/EmpyreanJhin.png",
+            "../src/assets/product_assets/EmpyreanJhin.png"
         ],
         "productName": "Empyrean Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
@@ -45,10 +45,10 @@
         "id": 3,
         "imageURLs": 
         [
-            "../src/assets/PROJECTJhin.png",
-            "../src/assets/PROJECTJhin.png",
-            "../src/assets/PROJECTJhin.png",
-            "../src/assets/PROJECTJhin.png"
+            "../src/assets/product_assets/PROJECTJhin.png",
+            "../src/assets/product_assets/PROJECTJhin.png",
+            "../src/assets/product_assets/PROJECTJhin.png",
+            "../src/assets/product_assets/PROJECTJhin.png"
         ],
         "productName": "PROJECT Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
@@ -59,10 +59,10 @@
         "id": 4,
         "imageURLs": 
         [
-            "../src/assets/OldWestJhin.png",
-            "../src/assets/OldWestJhin.png",
-            "../src/assets/OldWestJhin.png",
-            "../src/assets/OldWestJhin.png"
+            "../src/assets/product_assets/OldWestJhin.png",
+            "../src/assets/product_assets/OldWestJhin.png",
+            "../src/assets/product_assets/OldWestJhin.png",
+            "../src/assets/product_assets/OldWestJhin.png"
         ],
         "productName": "Old West Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
@@ -73,10 +73,10 @@
         "id": 5,
         "imageURLs": 
         [
-            "../src/assets/ShanHaiScrollsJhin.png",
-            "../src/assets/ShanHaiScrollsJhin.png",
-            "../src/assets/ShanHaiScrollsJhin.png",
-            "../src/assets/ShanHaiScrollsJhin.png"
+            "../src/assets/product_assets/ShanHaiScrollsJhin.png",
+            "../src/assets/product_assets/ShanHaiScrollsJhin.png",
+            "../src/assets/product_assets/ShanHaiScrollsJhin.png",
+            "../src/assets/product_assets/ShanHaiScrollsJhin.png"
         ],
         "productName": "Shan Hai Scrolls Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
@@ -87,14 +87,84 @@
         "id": 6,
         "imageURLs": 
         [
-            "../src/assets/BloodMoonJhin.png",
-            "../src/assets/BloodMoonJhin.png",
-            "../src/assets/BloodMoonJhin.png",
-            "../src/assets/BloodMoonJhin.png"
+            "../src/assets/product_assets/BloodMoonJhin.png",
+            "../src/assets/product_assets/BloodMoonJhin.png",
+            "../src/assets/product_assets/BloodMoonJhin.png",
+            "../src/assets/product_assets/BloodMoonJhin.png"
         ],
         "productName": "Blood Moon Jhin",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
-        "rarity": "",
+        "rarity": "epic",
+        "price": 200
+    },
+    {
+        "id": 7,
+        "imageURLs": 
+        [
+            "../src/assets/product_assets/BewitchingPoppy.png",
+            "../src/assets/product_assets/BewitchingPoppy.png",
+            "../src/assets/product_assets/BewitchingPoppy.png",
+            "../src/assets/product_assets/BewitchingPoppy.png"
+        ],
+        "productName": "Bewitching Poppy",
+        "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
+        "rarity": "epic",
+        "price": 200
+    },
+    {
+        "id": 8,
+        "imageURLs": 
+        [
+            "../src/assets/product_assets/AstronautPoppy.png",
+            "../src/assets/product_assets/AstronautPoppy.png",
+            "../src/assets/product_assets/AstronautPoppy.png",
+            "../src/assets/product_assets/AstronautPoppy.png"
+        ],
+        "productName": "Astronaut Poppy",
+        "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
+        "rarity": "epic",
+        "price": 200
+    },
+    {
+        "id": 9,
+        "imageURLs": 
+        [
+            "../src/assets/product_assets/CafeCutiesPoppy.png",
+            "../src/assets/product_assets/CafeCutiesPoppy.png",
+            "../src/assets/product_assets/CafeCutiesPoppy.png",
+            "../src/assets/product_assets/CafeCutiesPoppy.png"
+        ],
+        "productName": "Cafe Cuties Poppy",
+        "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
+        "rarity": "epic",
+        "price": 200
+    },
+    {
+        "id": 10,
+        "imageURLs": 
+        [
+            "../src/assets/product_assets/HextechPoppy.png",
+            "../src/assets/product_assets/HextechPoppy.png",
+            "../src/assets/product_assets/HextechPoppy.png",
+            "../src/assets/product_assets/HextechPoppy.png"
+        ],
+        "productName": "Hextech Poppy",
+        "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
+        "rarity": "mythic",
+        "price": 200
+    },
+    {
+        "id": 11,
+        "imageURLs": 
+        [
+            "../src/assets/product_assets/StarGuardianPoppy.png",
+            "../src/assets/product_assets/StarGuardianPoppy.png",
+            "../src/assets/product_assets/StarGuardianPoppy.png",
+            "../src/assets/product_assets/StarGuardianPoppy.png"
+        ],
+        "productName": "Star Guardian Poppy",
+        "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
+        "rarity": "epic",
         "price": 200
     }
 ]
