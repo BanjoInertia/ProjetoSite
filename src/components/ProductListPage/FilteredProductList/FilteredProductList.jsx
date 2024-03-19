@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import classes from "./FilteredProductList.module.css";
 import data from "../../../../public/data.json";
 import { ProductList } from "../ProductList/ProductList";
@@ -7,6 +7,8 @@ export const FilteredProductList = () => {
     const [products, setProducts] = useState([]);
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [selectedRarity, setSelectedRarity] = useState("");
+    const [show, setShow] = useState(false);
+    const dropdownRef = useRef(null);
 
     useEffect(() => {
         if (data && data.length > 0) {
@@ -14,7 +16,20 @@ export const FilteredProductList = () => {
             filterProducts(selectedRarity);
         }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [data, selectedRarity, filteredProducts]);
+    }, [data, selectedRarity, products]);
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setShow(false);
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
 
     const filterProducts = (rarity) => {
         if (rarity === "") {
@@ -25,45 +40,30 @@ export const FilteredProductList = () => {
         }
     };
 
-    const handleRarityChange = (event) => {
-        const rarity = event.target.value;
+    const handleRarityChange = (rarity) => {
         setSelectedRarity(rarity);
+        setShow(false);
+        filterProducts(rarity);
     };
 
     return (
         <div>
-
-
-
-
-            <div className={classes.dropdown}>
-                <div className={classes.select}>
-                    <span className={classes.selected}>Figma</span>
-                    <div className={classes.caret}></div>
+            <div className={classes.dropdown_container}>
+                    <div ref={dropdownRef} className={classes.dropdown}>
+                        <div onClick={() => setShow(!show)} className={`${show ? classes.select_clicked : ""} ${classes.select}`}>
+                            <span className={classes.selected}>{selectedRarity || "All"}</span>
+                            <div className={`${show ? classes.caret_rotate : ""} ${classes.caret}`}></div>
+                        </div>
+                        <ul className={`${show ? classes.menu_open : ""} ${classes.menu}`}>
+                            <li className={classes.option_filter} onClick={() => handleRarityChange("")}>All</li>
+                            <li className={selectedRarity === "common" ? classes.active : ""} onClick={() => handleRarityChange("common")}>Common</li>
+                            <li className={selectedRarity === "epic" ? classes.active : ""} onClick={() => handleRarityChange("epic")}>Epic</li>
+                            <li className={selectedRarity === "legendary" ? classes.active : ""} onClick={() => handleRarityChange("legendary")}>Legendary</li>
+                            <li className={selectedRarity === "mythic" ? classes.active : ""} onClick={() => handleRarityChange("mythic")}>Mythic</li>
+                        </ul>
                 </div>
-                <ul>
-                    <li>Framer</li>
-                    <li>Framer</li>
-                    <li>Framer</li>
-                    <li className={classes.active}>Framer</li>
-                    <li>Framer</li>
-                </ul>
             </div>
-
-
-
-
-
-            {/* <div className={classes.filter_container}>
-                <select className={classes.select_filter} value={selectedRarity} onChange={handleRarityChange}>
-                    <option className={classes.option_filter} value="">All</option>
-                    <option value="common">Common</option>
-                    <option value="epic">Epic</option>
-                    <option value="legendary">Legendary</option>
-                    <option value="mythic">Mythic</option>
-                </select>
-            </div> */}
             <ProductList filteredProducts={filteredProducts} />
         </div>
     );
-};
+}

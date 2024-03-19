@@ -11,6 +11,10 @@ import { Link } from 'react-router-dom';
 import { formatCurrancy } from '../../../utilities/formatCurrancy';
 
 export const HomePageSlider = () => {
+    const shuffledProducts = products.sort(() => Math.random() - 0.5);
+
+    const slicedProducts = shuffledProducts.slice(0, 7);
+
     return (
         <>
             <Swiper
@@ -40,7 +44,7 @@ export const HomePageSlider = () => {
                 modules={[Autoplay, Pagination]}
                 className={classes.swiper}
             >
-                {products.map((product, index) => (
+                {slicedProducts.map((product, index) => (
                     <SwiperSlide key={index}>
                         <Link className={classes.cards} to={`/product/${product.id}`} >
                             <img className={classes.img} src={product.imageURLs[0]} alt={product.productName} />
