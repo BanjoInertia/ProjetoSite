@@ -1,13 +1,3 @@
-.dropdown_container {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgb(31, 31, 31);
-    overflow: hidden;
-    animation: fadeInSlideUp 1s forwards;
-}
-
 .dropdown {
     min-width: 15em;
     position: relative;
@@ -90,15 +80,4 @@
 .menu_open {
     display: block;
     opacity: 1;
-}
-
-@keyframes fadeInSlideUp {
-    from {
-        height: 0;
-        overflow: hidden;
-    }
-    to {
-        height: 10vh;
-        overflow: visible;
-    }
 }

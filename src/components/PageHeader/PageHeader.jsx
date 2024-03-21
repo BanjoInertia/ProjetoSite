@@ -17,10 +17,10 @@ export const PageHeader = () => {
                         <Link to="/products">products</Link>
                     </li>
                     <li>
-                        <Link to="/">soulfighter</Link>
+                        <Link to="/">naosei!</Link>
                     </li>
                     <li>
-                        <Link to="/">sobre</Link>
+                        <Link to="/about">about</Link>
                     </li>
                 </ul>
                 <button className={classes.ProductCartContainer} onClick={openCart}>

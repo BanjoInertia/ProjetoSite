@@ -1,10 +1,17 @@
-.product_container {
+.products_title {
+    text-align: center;
+    font-size: 50px;
+    margin: 60px;
+}
+
+.products_container {
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    margin: 100px 50px;
+    margin: 0 50px;
+    margin-bottom: 150px;
 }
 
 .products_img {
