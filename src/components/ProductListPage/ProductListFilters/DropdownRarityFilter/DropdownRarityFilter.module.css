@@ -19,6 +19,7 @@
     padding: 1em;
     cursor: pointer;
     transition: background 0.3s;
+    text-transform: capitalize;
 }
 
 .select_clicked {

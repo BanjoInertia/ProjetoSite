@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import classes from "./SearchBarFilter.module.css"
 
 export const SearchBarFilter = ({ setSearchedProduct }) => {
@@ -8,14 +9,16 @@ export const SearchBarFilter = ({ setSearchedProduct }) => {
 
     return (
         <input
-            data-testid="pokemon-search-bar"
+            className={classes.search_bar}
             size={50}
             type="text"
-            id="searchProduct"
-            name="searchProduct"
             autoComplete="off"
             onChange={HandleSearchedProduct}
-            placeholder="Search for a pokemon"
+            placeholder="Search for a product"
         />
     )
 }
+
+SearchBarFilter.propTypes = {
+    setSearchedProduct: PropTypes.func.isRequired
+};

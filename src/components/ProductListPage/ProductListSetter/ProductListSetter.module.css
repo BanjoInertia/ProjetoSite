@@ -4,6 +4,14 @@
     margin: 60px;
 }
 
+.products_not_found_message {
+    height: 61vh;
+    text-align: center;
+    font-size: 30px;
+    color: red;
+    font-weight: 700;
+}
+
 .products_container {
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
