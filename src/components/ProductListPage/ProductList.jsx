@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { DropdownRarityFilter } from "./ProductListFilters/DropdownRarityFilter/DropdownRarityFilter";
 import { ProductListSetter } from "./ProductListSetter/ProductListSetter";
 import classes from "./ProductList.module.css"
@@ -7,6 +7,10 @@ import { SearchBarFilter } from "./ProductListFilters/SearchBarFilter/SearchBarF
 export const ProductList = () => {
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [searchedProduct, setSearchedProduct] = useState("")
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div>

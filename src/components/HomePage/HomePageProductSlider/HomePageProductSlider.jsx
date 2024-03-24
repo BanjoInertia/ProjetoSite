@@ -4,13 +4,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import classes from "./HomePageSlider.module.css"
+import classes from "./HomePageProductSlider.module.css"
 
 import products from "../../../../public/data.json"
 import { Link } from 'react-router-dom';
 import { formatCurrancy } from '../../../utilities/formatCurrancy';
 
-export const HomePageSlider = () => {
+export const HomePageProductSlider = () => {
     const shuffledProducts = products.sort(() => Math.random() - 0.5);
 
     const slicedProducts = shuffledProducts.slice(0, 7);
