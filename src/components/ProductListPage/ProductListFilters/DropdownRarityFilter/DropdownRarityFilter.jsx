@@ -3,19 +3,19 @@ import { useEffect, useState, useRef } from "react";
 import classes from "./DropdownRarityFilter.module.css";
 import data from "../../../../../public/data.json";
 
-export const DropdownRarityFilter = ({ setFilteredProducts }) => {
+export const DropdownRarityFilter = ({ setFilteredProducts, initialRarity }) => {
     const [products, setProducts] = useState([]);
-    const [selectedRarity, setSelectedRarity] = useState("");
+    const [selectedRarity, setSelectedRarity] = useState(initialRarity);
     const [show, setShow] = useState(false);
     const dropdownRef = useRef(null);
 
     useEffect(() => {
         if (data && data.length > 0) {
             setProducts(data);
-            filterProducts(selectedRarity);
+            filterProducts(initialRarity);
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [data, selectedRarity, products]);
+    }, [initialRarity, data, products]);
 
     useEffect(() => {
         function handleClickOutside(event) {
@@ -64,4 +64,5 @@ export const DropdownRarityFilter = ({ setFilteredProducts }) => {
 
 DropdownRarityFilter.propTypes = {
     setFilteredProducts: PropTypes.func.isRequired,
+    initialRarity: PropTypes.string.isRequired,
 };

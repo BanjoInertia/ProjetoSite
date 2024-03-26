@@ -1,10 +1,15 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { DropdownRarityFilter } from "./ProductListFilters/DropdownRarityFilter/DropdownRarityFilter";
 import { ProductListSetter } from "./ProductListSetter/ProductListSetter";
 import classes from "./ProductList.module.css"
 import { SearchBarFilter } from "./ProductListFilters/SearchBarFilter/SearchBarFilter";
 
 export const ProductList = () => {
+    const location = useLocation();
+    const queryParams = new URLSearchParams(location.search);
+    const initialRarity = queryParams.get("rarity") || "";
+
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [searchedProduct, setSearchedProduct] = useState("")
 
@@ -16,7 +21,7 @@ export const ProductList = () => {
         <div>
             <div className={classes.filters_container}>
                 <SearchBarFilter setSearchedProduct={setSearchedProduct} />
-                <DropdownRarityFilter setFilteredProducts={setFilteredProducts} />
+                <DropdownRarityFilter setFilteredProducts={setFilteredProducts} initialRarity={initialRarity} />
             </div>
             <ProductListSetter filteredProducts={filteredProducts} searchedProduct={searchedProduct} />
         </div>
