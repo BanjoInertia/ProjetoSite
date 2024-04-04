@@ -14,6 +14,7 @@ export const DropdownRarityFilter = ({ setFilteredProducts, initialRarity }) => 
             setProducts(data);
             filterProducts(initialRarity);
         }
+
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [initialRarity, data, products]);
 
