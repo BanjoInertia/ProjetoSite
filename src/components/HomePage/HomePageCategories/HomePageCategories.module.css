@@ -43,9 +43,17 @@
     text-transform: uppercase;
     background: linear-gradient(0deg, rgba(0,0,0,0.8953956582633054) 0%, rgba(0,0,0,0.7497373949579832) 25%, rgba(0,0,0,0.6012780112044818) 50%, rgba(0,0,0,0.4023984593837535) 75%, rgba(0,0,0,0) 100%);
     pointer-events: none;
+    transition: color 1s;
 }
 
 .categorias_card img:hover{
     transform: scale(1.1);
     transition: 1s;
+}
+
+.img1:hover .texto_img,
+.img2:hover .texto_img,
+.img3:hover .texto_img {
+    transition: 1s;
+    color: rgb(38, 141, 179);
 }

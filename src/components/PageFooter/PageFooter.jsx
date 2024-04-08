@@ -1,5 +1,9 @@
 import classes from "./PageFooter.module.css"
 
+import GitHubIcon from "../../assets/icon-git-hub.svg"
+import LinkedinIcon from "../../assets/icon-linkedin.svg"
+import PortifolioIcon from "../../assets/icon-portifolio.svg" 
+
 export const PageFooter = () => {
     return (
         <footer className={classes.footer_container}>
@@ -7,10 +11,16 @@ export const PageFooter = () => {
                 <div>
                     <h3>JIMMY</h3>
                 </div>
-                <div>
-                    <a >F</a>
-                    <a >I</a>
-                    <a >W</a>
+                <div className={classes.footer_icons}>
+                    <a href="https://github.com/BanjoInertia" target="_blank">
+                        <img src={GitHubIcon} alt="Git-Hub" />
+                    </a>
+                    <a href="https://github.com/BanjoInertia" target="_blank">
+                        <img src={LinkedinIcon} alt="Linkedin" />
+                    </a>
+                    <a href="https://github.com/BanjoInertia" target="_blank">
+                        <img src={PortifolioIcon} alt="Portifolio" />
+                    </a>
                 </div>
             </div>
             <ul>

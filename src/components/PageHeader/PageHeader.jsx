@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import classes from './PageHeader.module.css';
-import ProductCartImage from "../../assets/cart-svgrepo-com.svg";
+import ProductCartIcon from "../../assets/icon-shopping-cart.svg";
 import { useShoppingCart } from '../../context/useShoppingCart';
 
 export const PageHeader = () => {
@@ -17,14 +17,11 @@ export const PageHeader = () => {
                         <Link to="/products">products</Link>
                     </li>
                     <li>
-                        <Link to="/">naosei!</Link>
-                    </li>
-                    <li>
                         <Link to="/about">about</Link>
                     </li>
                 </ul>
                 <button className={classes.ProductCartContainer} onClick={openCart}>
-                    <img src={ProductCartImage} alt="Description of the SVG" />
+                    <img src={ProductCartIcon} alt="Shopping Cart" />
                     {
                         cartQuantity > 0 && (
                             <div>{cartQuantity}</div>

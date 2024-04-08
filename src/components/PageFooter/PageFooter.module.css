@@ -25,5 +25,18 @@
     color: rgb(38, 141, 179);
     font-size: 60px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.footer_icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_icons img {
+    width: 45px;
+}
+
+.footer_icons a:hover img {
+    filter: invert(48%) sepia(59%) saturate(3214%) hue-rotate(193deg) brightness(96%) contrast(87%);
 }
