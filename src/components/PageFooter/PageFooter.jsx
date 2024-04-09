@@ -28,13 +28,13 @@ export const PageFooter = () => {
                     <h2>company</h2>
                 </li>
                 <li>
-                    <p>About</p>
+                    <a href="#">About</a>
                 </li>
                 <li>
-                    <p>support</p>
+                    <a href="#">support</a>
                 </li>
                 <li>
-                    <p>contact</p>
+                    <a href="#">contact</a>
                 </li>
             </ul>
             <ul>
@@ -42,10 +42,10 @@ export const PageFooter = () => {
                     <h2>resources</h2>
                 </li>
                 <li>
-                    <p>resource Hub</p>
+                    <a href="#">resource Hub</a>
                 </li>
                 <li>
-                    <p>learn more</p>
+                    <a href="#">learn more</a>
                 </li>
             </ul>
             <ul>
@@ -53,10 +53,10 @@ export const PageFooter = () => {
                     <h2>TERMOS DE USO</h2>
                 </li>
                 <li>
-                    <p>Privacidade</p>
+                    <a href="#">Privacidade</a>
                 </li>
                 <li>
-                    <p>Segurança</p>
+                    <a href="#">Segurança</a>
                 </li>
             </ul>
         </footer>

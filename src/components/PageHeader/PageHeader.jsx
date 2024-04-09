@@ -20,7 +20,7 @@ export const PageHeader = () => {
                         <Link to="/about">about</Link>
                     </li>
                 </ul>
-                <button className={classes.ProductCartContainer} onClick={openCart}>
+                <button className={classes.Product_cart_container} onClick={openCart}>
                     <img src={ProductCartIcon} alt="Shopping Cart" />
                     {
                         cartQuantity > 0 && (

@@ -10,11 +10,15 @@
     padding: 0 330px;
 }
 
+.header_container p{
+    pointer-events: none;
+}
+
 .header {  
     height: 15vh;
     display: flex;
     justify-content: center;
-    gap: 15%;
+    gap: 20%;
     align-items: center;
     border-bottom: solid 3px white;
 }
@@ -25,17 +29,21 @@
     font-size: 25px;
 }
 
-.ProductCartContainer {
+.header_options a:hover {
+    color: rgb(38, 141, 179);
+}
+
+.Product_cart_container {
     background: none;
     border: none;
     position: relative;
 }
 
-.ProductCartContainer img {
+.Product_cart_container img {
     width: 40px;
 }
 
-.ProductCartContainer div {
+.Product_cart_container div {
     width: 1.5rem;
     height: 1.5rem;
     display: flex;
@@ -48,4 +56,8 @@
     bottom: 0;
     right: 0;
     transform: translate(25%, 25%);
+}
+
+.Product_cart_container:hover img {
+    filter: invert(48%) sepia(59%) saturate(3214%) hue-rotate(193deg) brightness(96%) contrast(87%);
 }
