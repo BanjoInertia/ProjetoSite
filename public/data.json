@@ -97,6 +97,8 @@
         "rarity": "epic",
         "price": 200
     },
+
+
     {
         "id": 7,
         "imageURLs": 
@@ -163,6 +165,98 @@
             "../src/assets/product_assets/StarGuardianPoppy.png"
         ],
         "productName": "Star Guardian Poppy",
+        "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
+        "rarity": "epic",
+        "price": 200
+    },
+
+
+
+
+
+
+
+
+    {
+        "id": 12,
+        "imageURLs": 
+        [
+            "../src/assets/product_assets/SpaceGrooveBlitzcrank.png",
+            "../src/assets/product_assets/SpaceGrooveBlitzcrank.png",
+            "../src/assets/product_assets/SpaceGrooveBlitzcrank.png",
+            "../src/assets/product_assets/SpaceGrooveBlitzcrank.png"
+        ],
+        "productName": "Space Groove Blitzcrank",
+        "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
+        "rarity": "legendary",
+        "price": 200
+    },
+    {
+        "id": 13,
+        "imageURLs": 
+        [
+            "../src/assets/product_assets/VictoriousBlitzcrank.png",
+            "../src/assets/product_assets/VictoriousBlitzcrank.png",
+            "../src/assets/product_assets/VictoriousBlitzcrank.png",
+            "../src/assets/product_assets/VictoriousBlitzcrank.png"
+        ],
+        "productName": "Victorious Blitzcrank",
+        "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
+        "rarity": "common",
+        "price": 200
+    },
+    {
+        "id": 14,
+        "imageURLs": 
+        [
+            "../src/assets/product_assets/WitchsBrewBlitzcrank.png",
+            "../src/assets/product_assets/WitchsBrewBlitzcrank.png",
+            "../src/assets/product_assets/WitchsBrewBlitzcrank.png",
+            "../src/assets/product_assets/WitchsBrewBlitzcrank.png"
+        ],
+        "productName": "Witch's Brew Blitzcrank",
+        "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
+        "rarity": "epic",
+        "price": 200
+    },
+    {
+        "id": 15,
+        "imageURLs": 
+        [
+            "../src/assets/product_assets/RustyBlitzcrank.png",
+            "../src/assets/product_assets/RustyBlitzcrank.png",
+            "../src/assets/product_assets/RustyBlitzcrank.png",
+            "../src/assets/product_assets/RustyBlitzcrank.png"
+        ],
+        "productName": "Rusty Blitzcrank",
+        "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
+        "rarity": "common",
+        "price": 200
+    },
+    {
+        "id": 16,
+        "imageURLs": 
+        [
+            "../src/assets/product_assets/RiotBlitzcrank.png",
+            "../src/assets/product_assets/RiotBlitzcrank.png",
+            "../src/assets/product_assets/RiotBlitzcrank.png",
+            "../src/assets/product_assets/RiotBlitzcrank.png"
+        ],
+        "productName": "Riot Blitzcrank",
+        "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
+        "rarity": "common",
+        "price": 200
+    },
+    {
+        "id": 17,
+        "imageURLs": 
+        [
+            "../src/assets/product_assets/Beezcrank.png",
+            "../src/assets/product_assets/Beezcrank.png",
+            "../src/assets/product_assets/Beezcrank.png",
+            "../src/assets/product_assets/Beezcrank.png"
+        ],
+        "productName": "Beezcrank",
         "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the wheather can offer",
         "rarity": "epic",
         "price": 200
