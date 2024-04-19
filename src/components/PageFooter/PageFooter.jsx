@@ -23,42 +23,44 @@ export const PageFooter = () => {
                     </a>
                 </div>
             </div>
-            <ul>
-                <li>
-                    <h2>company</h2>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">support</a>
-                </li>
-                <li>
-                    <a href="#">contact</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <h2>resources</h2>
-                </li>
-                <li>
-                    <a href="#">resource Hub</a>
-                </li>
-                <li>
-                    <a href="#">learn more</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <h2>TERMOS DE USO</h2>
-                </li>
-                <li>
-                    <a href="#">Privacidade</a>
-                </li>
-                <li>
-                    <a href="#">Segurança</a>
-                </li>
-            </ul>
+            <div className={classes.footer_items}>
+                <ul>
+                    <li>
+                        <h2>company</h2>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">support</a>
+                    </li>
+                    <li>
+                        <a href="#">contact</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>resources</h2>
+                    </li>
+                    <li>
+                        <a href="#">resource Hub</a>
+                    </li>
+                    <li>
+                        <a href="#">learn more</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>TERMOS DE USO</h2>
+                    </li>
+                    <li>
+                        <a href="#">Privacidade</a>
+                    </li>
+                    <li>
+                        <a href="#">Segurança</a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     )
 }

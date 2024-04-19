@@ -8,7 +8,7 @@ export const PageHeader = () => {
     return (
         <nav className={classes.header_container}>
             <section className={classes.header}>
-                <p>JIMMY</p>
+                <p className={classes.page_logo}>JIMMY</p>
                 <ul className={classes.header_options}>
                     <li>
                         <Link to="/">home</Link>
