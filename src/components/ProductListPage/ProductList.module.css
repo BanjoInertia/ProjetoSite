@@ -1,10 +1,8 @@
 .filters_container {
-    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: rgb(31, 31, 31);
-    overflow: hidden;
     animation: fadeInSlideUp 1s forwards;
 }
 
@@ -14,7 +12,24 @@
         overflow: hidden;
     }
     to {
-        height: 10vh;
+        height: 90px;
         overflow: visible;
+    }
+}
+
+@media (max-width: 767px) {
+    .filters_container {
+        flex-direction: column;
+    }
+
+    @keyframes fadeInSlideUp {
+        from {
+            height: 0;
+            overflow: hidden;
+        }
+        to {
+            height: 170px;
+            overflow: visible;
+        }
     }
 }

@@ -82,3 +82,9 @@
     display: block;
     opacity: 1;
 }
+
+@media (max-width: 767px) {
+    .dropdown {
+        margin: 1em;
+    }
+}
