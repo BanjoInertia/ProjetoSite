@@ -6,10 +6,10 @@ import { HomePageCategories } from "../components/HomePage/HomePageCategories/Ho
 export const HomePage = () => {
     return (
         <>
-            <HomePageDisplayedProduct />
+            {/* <HomePageDisplayedProduct /> */}
             <HomePageProductSlider />
-            <HomePageCards />
-            <HomePageCategories />
+            {/* <HomePageCards /> */}
+            {/* <HomePageCategories /> */}
         </>
     )
 }

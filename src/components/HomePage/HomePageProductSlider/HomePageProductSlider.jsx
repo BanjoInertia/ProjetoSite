@@ -18,7 +18,7 @@ export const HomePageProductSlider = () => {
     return (
         <>
             <Swiper
-                slidesPerView={3}
+                slidesPerView={1}
                 spaceBetween={70}
                 pagination={{
                     clickable: true,
@@ -28,7 +28,7 @@ export const HomePageProductSlider = () => {
                     disableOnInteraction: false,
                 }}
                 breakpoints={{
-                    640: {
+                    425: {
                         slidesPerView: 1,
                         spaceBetween: 50,
                     },
@@ -36,7 +36,7 @@ export const HomePageProductSlider = () => {
                         slidesPerView: 2,
                         spaceBetween: 40,
                     },
-                    1250: {
+                    1024: {
                         slidesPerView: 3,
                         spaceBetween: 30,
                     },
