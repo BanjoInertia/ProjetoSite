@@ -7,26 +7,38 @@ import commonImg from "../../../assets/product_assets/DarkCosmicJhin.png"
 
 export const HomePageCategories = () => {
     return (
-        <div className={classes.categorias_card}>
+        <div className={classes.categories_card}>
 
             <div className={classes.img1} id="legendary">
-                <Link to={`/products?rarity=epic`} >
+                <Link to={`/products?rarity=legendary`} >
                     <img className={classes.img1} src={epicImg} />
-                    <p className={classes.texto_img}>Epic</p>
+                    <div className={classes.category_name_container}>
+                        <div className={classes.category_name}>
+                            <p>Legendary</p>
+                        </div>
+                    </div>
                 </Link>
             </div>
 
             <div className={classes.img2}>
-                <Link to={`/products?rarity=legendary`} >
+                <Link to={`/products?rarity=epic`} >
                     <img className={classes.img2} src={legendaryImg} />
-                    <p className={classes.texto_img}>Legendary</p>
+                    <div className={classes.category_name_container}>
+                        <div className={classes.category_name}>
+                            <p>Epic</p>
+                        </div>
+                    </div>
                 </Link>
             </div>
 
             <div className={classes.img3}>
                 <Link to={`/products?rarity=common`} >
                     <img className={classes.img3} src={commonImg} />
-                    <p className={classes.texto_img}>Common</p>
+                    <div className={classes.category_name_container}>
+                        <div className={classes.category_name}>
+                            <p>Common</p>
+                        </div>
+                    </div>
                 </Link>
             </div>
 

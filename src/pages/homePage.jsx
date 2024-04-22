@@ -9,7 +9,7 @@ export const HomePage = () => {
             {/* <HomePageDisplayedProduct /> */}
             <HomePageProductSlider />
             {/* <HomePageCards /> */}
-            {/* <HomePageCategories /> */}
+            <HomePageCategories />
         </>
     )
 }

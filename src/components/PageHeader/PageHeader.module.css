@@ -17,7 +17,7 @@
 .header {  
     height: 15vh;
     display: flex;
-    justify-content: space-between; /* Adjust gap between items */
+    justify-content: space-between;
     align-items: center;
     border-bottom: solid 3px white;
 }

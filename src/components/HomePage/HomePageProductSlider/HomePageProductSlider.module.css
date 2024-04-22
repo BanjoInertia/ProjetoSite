@@ -5,9 +5,10 @@
     flex-direction: column;
     max-width: 1200px;
     min-height: 70vh;
-    margin-top: 50px;
+    margin-top: 50px !important; 
     font-size: 22px;
     font-weight: 700;
+    text-align: center;
 }
 
 .cards{
@@ -28,21 +29,22 @@
 
 .product_name {
     margin-top: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;
     color: rgb(38, 141, 179);
 }
 
-@media (max-width: 1440px) {
-    
-}
-
-@media (max-width: 1024px) {
-    
+@media (max-width: 1280px) {
+    .swiper {
+        margin: 0 35px;
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 767px) {
-
+    .swiper {
+        font-size: 20px;
+    }
 }
