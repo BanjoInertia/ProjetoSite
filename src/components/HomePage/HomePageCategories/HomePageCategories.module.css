@@ -6,7 +6,7 @@
     "one three";
     gap: 20px;
     color: white;
-    margin: 150px;
+    margin: 150px 150px;
 }
 
 .img1, .img2, .img3 {
@@ -18,19 +18,19 @@
 
 .img1{
     grid-area: one;
-    width: 570px;
+    width: 550px;
     height: 820px;
 }
 
 .img2{
     grid-area: two;
-    width: 570px;
+    width: 550px;
     height: 400px;
 }
 
 .img3{
     grid-area: three;
-    width: 570px;
+    width: 550px;
     height: 400px;
 }
 
@@ -64,50 +64,75 @@
     color: rgb(38, 141, 179);
 }
 
-@media (max-width: 1440px) {
-    
-}
-
-@media (max-width: 1024px) {
-    
-}
-
-@media (max-width: 767px) {
+@media (max-width: 1420px) {
     .categories_card{
-        display: grid;
-        justify-content: center;
-        grid-template-areas:
-        "one one"
-        "two three";
         gap: 10px;
-        color: white;
-        margin: 150px 30px;
+        margin: 150px 150px;
     }
 
     .img1{
-        grid-area: one;
+        width: 100%;
+        height: 710px;
+    }
+    
+    .img2{
         width: 100%;
         height: 350px;
     }
     
-    .img2{
-        grid-area: two;
-        width: 100%;
-        height: 200px;
-    }
-    
     .img3{
-        grid-area: three;
         width: 100%;
-        height: 200px;
+        height: 350px;
     }
 
     .category_name_container {
-        font-size: 25px;
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .categories_card{
+        margin: 150px 30px;
+    }
+
+    .img1{
+        height: 610px;
+    }
+    .img2{
+        height: 300px;
+    }
+    .img3{
+        height: 300px;
+    }
+
+    .category_name_container {
+        font-size: 45px;
     }
 
     .category_name {
         bottom: 3px;
         padding: 100px 0 10px 10px;
+    }
+}
+
+@media (max-width: 682px) {
+    .categories_card{
+        grid-template-areas:
+        "one one"
+        "two three";
+    }
+
+    .img1{
+        height: 350px;
+    }   
+    .img2{
+        height: 200px;
+    }  
+    .img3{
+        height: 200px;
+    }
+
+    .category_name_container {
+        font-size: 25px;
     }
 }

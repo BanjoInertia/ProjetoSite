@@ -11,14 +11,14 @@ export const AppRoutes = () => {
     return (
         <ShoppingCartProvider>
             <BrowserRouter>
-                <PageHeader />
+                {/* <PageHeader /> */}
                 <Routes>
                     <Route path='/' element={<HomePage />}/>
                     <Route path='/products' element={<ProductListPage />}/>
                     <Route path='/product/:id' element={<ProductDetailsPage />}/>
                     <Route path='/about' element={<AboutPage />} />
                 </Routes>
-                <PageFooter />
+                {/* <PageFooter /> */}
             </BrowserRouter>
         </ShoppingCartProvider>
     )
