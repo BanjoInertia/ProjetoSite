@@ -1,31 +1,26 @@
-.displayed_product_container {
-    height: 0;
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    padding: 0 18%;
-    color: white;
-    z-index: -2;
-    overflow: hidden;
-    opacity: 0;
-    animation: fadeInSlideUp 1s forwards;
-}
-
-.info_container {
+.display_container {
     background-color: rgb(31, 31, 31);
 }
 
-.displayed_product_container h1{
-    font-size: 4.5em;
-    margin-bottom: 20px;
-    font-weight: 700;
+.displayed_product_container {
+    display: flex;
+    justify-content: center;
+    gap: 170px;
+    align-items: center;
+    padding: 0 30rem;
+    color: white;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeInSlideUp 1s forwards;
+    font-size: 25px;
+}
 
+.displayed_product_container h1{
+    font-size: 70px;
+    margin-bottom: 20px;
 }
 
 .displayed_product_container p{
-    width: 500px;
-    font-size: 25px;
-    text-wrap: wrap;
     margin-bottom: 40px;
 }
 
@@ -41,7 +36,7 @@
 }
 
 .product_image {
-    width: 45%;
+    width: 500px;
     transition: transform 0.3s ease;
 }
 
@@ -57,5 +52,68 @@
     to {
         height: 75vh;
         opacity: 1;
+    }
+}
+
+@media (max-width: 1440px) {
+    
+}
+
+@media (max-width: 1024px) {
+    .displayed_product_container {
+        flex-direction: column-reverse;
+        gap: 5px;
+        align-items: center;
+        padding: 0 70px; 
+        font-size: 20px;   
+        text-align: center;
+    }
+
+    .displayed_product_container h1{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .displayed_product_container p{
+        margin-bottom: 20px;
+    }
+
+    .product_image {
+        width: 400px;
+        transition: transform 0.3s ease;
+    }
+
+    @keyframes fadeInSlideUp {
+        from {
+            height: 0;
+            opacity: 0;
+        }
+        to {
+            height: 650px;
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .displayed_product_container h1{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .product_image {
+        width: 300px;
+        transition: transform 0.3s ease;
+    }
+
+    @keyframes fadeInSlideUp {
+        from {
+            height: 0;
+            opacity: 0;
+        }
+        to {
+            height: 650px;
+            opacity: 1;
+        }
     }
 }

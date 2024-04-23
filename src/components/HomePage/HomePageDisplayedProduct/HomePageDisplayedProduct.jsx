@@ -8,7 +8,7 @@ export const HomePageDisplayedProduct = () => {
     }, []);
 
     return (
-        <div className={classes.info_container}>
+        <div className={classes.display_container}>
             <section className={classes.displayed_product_container}>
                 <div>
                     <h1>XX99 MARK II HEADPHONES</h1>
