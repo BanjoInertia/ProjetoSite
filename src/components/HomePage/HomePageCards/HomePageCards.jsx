@@ -5,7 +5,7 @@ import img from "../../../assets/blitz.png"
 export const HomePageCards = () => {
     return (
         <>
-            <h1 className={classes.card_titulo}>New Release!</h1>
+            {/* <h1 className={classes.card_titulo}>New Release!</h1> */}
             <div className={classes.card}>
                 <img src={img} />
                 <div>

@@ -7,9 +7,9 @@ export const HomePage = () => {
     return (
         <>
             <HomePageDisplayedProduct />
-            {/* <HomePageProductSlider /> */}
-            {/* <HomePageCards /> */}
-            {/* <HomePageCategories /> */}
+            <HomePageProductSlider />
+            <HomePageCards />
+            <HomePageCategories />
         </>
     )
 }

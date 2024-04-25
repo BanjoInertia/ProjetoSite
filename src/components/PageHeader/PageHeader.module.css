@@ -1,6 +1,6 @@
 .header_container {
     position: relative;
-    height: 15vh;
+
     background-color: rgb(31, 31, 31);
     color: white;
     font-weight: 700;
@@ -12,10 +12,11 @@
 .page_logo{
     font-size: 3rem;
     pointer-events: none;
+    color: rgb(38, 141, 179);
 }
 
 .header {  
-    height: 15vh;
+    height: 142px;
     display: flex;
     justify-content: space-between;
     align-items: center;
