@@ -18,3 +18,19 @@
     object-fit: cover;
     margin-left: 1.5px;
 }
+
+@media (max-width: 570px) {
+    .img {
+        width: 380px;
+        height: 380px;
+    }
+    
+    .slider_container {
+        width: 380px;
+    }
+    
+    .preview_img {
+        width: 92px;
+        height: 92px;
+    }
+}

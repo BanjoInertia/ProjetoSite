@@ -26,11 +26,15 @@ export const ProductDetails = ({ id }) => {
 
             <ProductDetailsImageSlider imageURLs={product.imageURLs} />
 
-            <div className={classes.product_information}>
-                <h2 className={classes.product_name}>{product.productName}</h2>
-                <p className={classes.product_description}>{product.description}</p>
-                <p className={classes.product_price}>{formatCurrancy(product.price)}</p>
-                <button className={classes.add_to_cart_button} onClick={() => increaseCartQuantity(productId)}> + Carrinho </button>
+            <div className={classes.product_information_container}>
+                <h2 className={classes.product_name}>{product.productName}</h2>           
+                <div className={classes.product_information}>
+                    <p className={classes.product_description}>{product.description}</p>
+                    <div>
+                        <p className={classes.product_price}>{formatCurrancy(product.price)}</p>
+                        <button className={classes.add_to_cart_button} onClick={() => increaseCartQuantity(productId)}> + Carrinho </button>
+                    </div>
+                </div>
             </div>
         </div>
     );
