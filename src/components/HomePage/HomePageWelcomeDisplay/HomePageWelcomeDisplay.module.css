@@ -5,9 +5,9 @@
 .displayed_product_container {
     display: flex;
     justify-content: center;
-    gap: 170px;
+    gap: 130px;
     align-items: center;
-    padding: 0 30rem;
+    padding: 0 25rem;
     color: white;
     overflow: hidden;
     opacity: 0;

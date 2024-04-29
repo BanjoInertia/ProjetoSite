@@ -1,4 +1,4 @@
-import { HomePageDisplayedProduct } from "../components/HomePage/HomePageDisplayedProduct/HomePageDisplayedProduct"
+import { HomePageWelcomeDisplay } from "../components/HomePage/HomePageWelcomeDisplay/HomePageWelcomeDisplay"
 import { HomePageProductSlider } from "../components/HomePage/HomePageProductSlider/HomePageProductSlider"
 import { HomePageCards } from "../components/HomePage/HomePageCards/HomePageCards"
 import { HomePageCategories } from "../components/HomePage/HomePageCategories/HomePageCategories"
@@ -6,7 +6,7 @@ import { HomePageCategories } from "../components/HomePage/HomePageCategories/Ho
 export const HomePage = () => {
     return (
         <>
-            <HomePageDisplayedProduct />
+            <HomePageWelcomeDisplay />
             <HomePageProductSlider />
             <HomePageCards />
             <HomePageCategories />
