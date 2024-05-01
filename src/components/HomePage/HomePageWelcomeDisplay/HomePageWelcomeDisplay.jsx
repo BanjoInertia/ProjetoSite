@@ -12,7 +12,7 @@ export const HomePageWelcomeDisplay = () => {
         <div className={classes.display_container}>
             <section className={classes.displayed_product_container}>
                 <div>
-                    <h1>WELCOME TO AAA</h1>
+                    <h1>WELCOME TO THE STORE</h1>
                     <p>Enhance your gaming experience with our selection of skins. Explore our catalog to find the perfect style!</p>
                     <Link to="/products"><button>SEE PRODUCTS</button></Link>
                 </div>

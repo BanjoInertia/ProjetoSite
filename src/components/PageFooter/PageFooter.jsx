@@ -8,7 +8,7 @@ export const PageFooter = () => {
     return (
         <footer className={classes.footer_container}>
             <div>
-                <h3>JIMMY</h3>
+                <h3>STORE</h3>
                 <div className={classes.footer_icons}>
                     <a href="https://github.com/BanjoInertia" target="_blank">
                         <img src={GitHubIcon} alt="Git-Hub" />
@@ -49,13 +49,13 @@ export const PageFooter = () => {
                 </ul>
                 <ul>
                     <li>
-                        <h2>TERMOS DE USO</h2>
+                        <h2>TERMS OF USE</h2>
                     </li>
                     <li>
-                        <a href="#">Privacidade</a>
+                        <a href="#">Privacy</a>
                     </li>
                     <li>
-                        <a href="#">Segurança</a>
+                        <a href="#">security</a>
                     </li>
                 </ul>
             </div>

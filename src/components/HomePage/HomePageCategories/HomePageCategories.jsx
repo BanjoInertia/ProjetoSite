@@ -1,9 +1,9 @@
 import classes from "./HomePageCategories.module.css"
 import { Link } from "react-router-dom"
 
-import epicImg from "../../../assets/product_assets/SoulFighterJhin.png"
-import legendaryImg from "../../../assets/product_assets/OldWestJhin.png"
-import commonImg from "../../../assets/product_assets/DarkCosmicJhin.png"
+import legendaryImg from "../../../assets/product_assets/SoulFighterJhin.png"
+import epicImg from "../../../assets/product_assets/BewitchingPoppy.png"
+import commonImg from "../../../assets/product_assets/SpaceGrooveBlitzcrank.png"
 
 export const HomePageCategories = () => {
     return (
@@ -11,7 +11,7 @@ export const HomePageCategories = () => {
 
             <div className={classes.img1} id="legendary">
                 <Link to={`/products?rarity=legendary`} >
-                    <img className={classes.img1} src={epicImg} />
+                    <img className={classes.img1} src={legendaryImg} />
                     <div className={classes.category_name_container}>
                         <div className={classes.category_name}>
                             <p>Legendary</p>
@@ -22,7 +22,7 @@ export const HomePageCategories = () => {
 
             <div className={classes.img2}>
                 <Link to={`/products?rarity=epic`} >
-                    <img className={classes.img2} src={legendaryImg} />
+                    <img className={classes.img2} src={epicImg} />
                     <div className={classes.category_name_container}>
                         <div className={classes.category_name}>
                             <p>Epic</p>
