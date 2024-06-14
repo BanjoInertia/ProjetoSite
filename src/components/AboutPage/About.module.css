@@ -43,6 +43,10 @@
     color: rgb(38, 141, 179);
 }
 
+.contact_links:hover {
+    color: rgb(32, 82, 148);
+}
+
 @media (max-width: 1600px) {
     .about_container {
         gap: 80px;

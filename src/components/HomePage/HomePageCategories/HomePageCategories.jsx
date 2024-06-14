@@ -9,7 +9,7 @@ export const HomePageCategories = () => {
     return (
         <div className={classes.categories_card}>
 
-            <div className={classes.img1} id="legendary">
+            <div className={classes.img1}>
                 <Link to={`/products?rarity=legendary`} >
                     <img className={classes.img1} src={legendaryImg} />
                     <div className={classes.category_name_container}>

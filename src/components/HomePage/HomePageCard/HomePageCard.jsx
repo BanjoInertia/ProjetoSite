@@ -1,12 +1,11 @@
-import classes from "./HomePageCards.module.css"
-
+import classes from "./HomePageCard.module.css"
 import img from "../../../assets/blitz.png"
 import { Link } from "react-router-dom"
 
-export const HomePageCards = () => {
+export const HomePageCard = () => {
     return (
         <>
-            <h1 className={classes.card_titulo}>New Release!</h1>
+            <h1 className={classes.card_title}>New Release!</h1>
             <div className={classes.card}>
                 <img src={img} />
                 <div>
