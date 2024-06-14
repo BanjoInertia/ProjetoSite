@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { DropdownRarityFilter } from "./ProductListFilters/DropdownRarityFilter/DropdownRarityFilter";
 import { ProductListSetter } from "./ProductListSetter/ProductListSetter";
-import classes from "./ProductList.module.css"
 import { SearchBarFilter } from "./ProductListFilters/SearchBarFilter/SearchBarFilter";
+import classes from "./ProductList.module.css"
 
 export const ProductList = () => {
     const location = useLocation();

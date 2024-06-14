@@ -7,7 +7,7 @@ import { formatCurrancy } from '../../../utilities/formatCurrancy';
 import { useShoppingCart } from '../../../context/useShoppingCart';
 
 export const ProductDetails = ({ id }) => {
-    const productId = parseInt(id); // Convert id to number
+    const productId = parseInt(id);
 
     const product = mockedData.find(item => item.id === productId);
 
@@ -32,7 +32,7 @@ export const ProductDetails = ({ id }) => {
                     <p className={classes.product_description}>{product.description}</p>
                     <div>
                         <p className={classes.product_price}>{formatCurrancy(product.price)}</p>
-                        <button className={classes.add_to_cart_button} onClick={() => increaseCartQuantity(productId)}> + Carrinho </button>
+                        <button className={classes.add_to_cart_button} onClick={() => increaseCartQuantity(productId)}> + Cart </button>
                     </div>
                 </div>
             </div>

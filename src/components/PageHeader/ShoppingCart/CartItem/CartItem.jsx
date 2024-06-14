@@ -8,7 +8,9 @@ import { useShoppingCart } from "../../../../context/useShoppingCart";
 export const CartItem = ({ id }) => {
     const { removeFromCart } = useShoppingCart()
     const item = Products.find(item => item.id === id)
+
     if (item === null) return null
+    
     return (
         <Stack direction="horizontal" gap={2} className={classes.stack}>
             <img src={item.imageURLs[0]} className={classes.cart_item_image} />
