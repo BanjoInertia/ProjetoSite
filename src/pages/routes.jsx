@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes} from 'react-router-dom'
 import { HomePage } from './homePage'
 import { ProductListPage } from './productListPage'
-import { ProductDetailsPage } from './productDetailsPage'
+import { ProductDetailsPage } from './ProductDetailsPage'
 import { PageHeader } from '../components/PageHeader/PageHeader'
 import { PageFooter } from '../components/PageFooter/PageFooter'
 import { ShoppingCartProvider } from '../context/ShoppingCartContext'
