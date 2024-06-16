@@ -1,11 +1,11 @@
-import { BrowserRouter, Route, Routes} from 'react-router-dom'
-import { HomePage } from './homePage'
-import { ProductListPage } from './productListPage'
-import { ProductDetailsPage } from './productDetailsPage'
-import { PageHeader } from '../components/PageHeader/PageHeader'
-import { PageFooter } from '../components/PageFooter/PageFooter'
-import { ShoppingCartProvider } from '../context/ShoppingCartContext'
-import { AboutPage } from './aboutPage'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HomePage } from './homePage';
+import { ProductListPage } from './productListPage';
+import { ProductDetailsPage } from './productDetailsPage';
+import { AboutPage } from './aboutPage';
+import { PageHeader } from '../components/PageHeader/PageHeader';
+import { PageFooter } from '../components/PageFooter/PageFooter';
+import { ShoppingCartProvider } from '../context/ShoppingCartContext';
 
 export const AppRoutes = () => {
     return (
@@ -13,13 +13,13 @@ export const AppRoutes = () => {
             <BrowserRouter>
                 <PageHeader />
                 <Routes>
-                    <Route path='/' element={<HomePage />}/>
-                    <Route path='/products' element={<ProductListPage />}/>
-                    <Route path='/product/:id' element={<ProductDetailsPage />}/>
+                    <Route path='/' element={<HomePage />} />
+                    <Route path='/products' element={<ProductListPage />} />
+                    <Route path='/product/:id' element={<ProductDetailsPage />} />
                     <Route path='/about' element={<AboutPage />} />
                 </Routes>
                 <PageFooter />
             </BrowserRouter>
         </ShoppingCartProvider>
-    )
-}
+    );
+};

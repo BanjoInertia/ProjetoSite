@@ -4,16 +4,22 @@ import { useLocalStorage } from "../hooks/useLocalStorage";
 import { ShoppingCart } from "../components/PageHeader/ShoppingCart/ShoppingCart";
 
 const initialContext = {
-  openCart: () => {},
+  openCart: () => { },
 };
 
 export const ShoppingCartContext = createContext(initialContext);
 
 export const ShoppingCartProvider = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [cartItems, setCartItems] = useLocalStorage([]);
+  const [cartItems, setCartItems] = useLocalStorage('cartItems', []);
 
-  const cartQuantity = cartItems.reduce((quantity, item) => item.quantity + quantity, 0);
+  const cartQuantity = (() => {
+    let quantity = 0;
+    for (let item of cartItems) {
+      quantity += item.quantity;
+    }
+    return quantity;
+  })();
 
   const openCart = () => setIsOpen(true);
   const closeCart = () => setIsOpen(false);
@@ -29,9 +35,7 @@ export const ShoppingCartProvider = ({ children }) => {
         return [...currItems, { id, quantity: 1 }];
       } else {
         const updatedItems = [...currItems];
-        if (updatedItems[existingIndex].quantity < 1) {
-          updatedItems[existingIndex].quantity += 1;
-        }
+        updatedItems[existingIndex].quantity += 1;
         return updatedItems;
       }
     });
