@@ -15,22 +15,32 @@ export const ShoppingCart = ({ isOpen }) => {
                 <Offcanvas.Title className='cart_tittle'>Cart</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-                <Stack gap={3}>
-                    {
-                        cartItems.map(item => (
-                            <CartItem key={item.id} {...item} />
-                        ))
-                    }
-                    <div className='ms-auto fw-bold fs-4'>
-                        Total {" "}
-                        {formatCurrancy(
-                            cartItems.reduce((total, cartItem) => {
-                                const item = Products.find(item => item.id === cartItem.id)
-                                return total + (item?.price || 0)
-                            }, 0)
-                        )}
-                    </div>
-                </Stack>
+                {
+                    cartItems && cartItems.length > 0 ? (
+                        <Stack gap={3}>
+                            {
+                                cartItems.map(item => (
+                                    <CartItem key={item.id} {...item} />
+                                ))
+                            }
+                            <div className='ms-auto fw-bold fs-4'>
+                                Total {" "}
+                                {formatCurrancy(
+                                    (() => {
+                                        let total = 0;
+                                        for (let cartItem of cartItems) {
+                                            const item = Products.find(item => item.id === cartItem.id);
+                                            total += item?.price || 0;
+                                        }
+                                        return total;
+                                    })()
+                                )}
+                            </div>
+                        </Stack>
+                    ) : (
+                        <p>No items in the cart.</p>
+                    )
+                }
             </Offcanvas.Body>
         </Offcanvas>
     )
