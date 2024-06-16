@@ -26,14 +26,10 @@ export const ShoppingCart = ({ isOpen }) => {
                             <div className='ms-auto fw-bold fs-4'>
                                 Total {" "}
                                 {formatCurrancy(
-                                    (() => {
-                                        let total = 0;
-                                        for (let cartItem of cartItems) {
-                                            const item = Products.find(item => item.id === cartItem.id);
-                                            total += item?.price || 0;
-                                        }
-                                        return total;
-                                    })()
+                                    cartItems.reduce((total, cartItem) => {
+                                        const item = Products.find(item => item.id === cartItem.id)
+                                        return total + (item?.price || 0)
+                                    }, 0)
                                 )}
                             </div>
                         </Stack>

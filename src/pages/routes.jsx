@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import { HomePage } from './homePage';
 import { ProductListPage } from './productListPage';
 import { ProductDetailsPage } from './productDetailsPage';
@@ -13,10 +13,12 @@ export const AppRoutes = () => {
             <BrowserRouter>
                 <PageHeader />
                 <Routes>
-                    <Route path='/' element={<HomePage />} />
-                    <Route path='/products' element={<ProductListPage />} />
-                    <Route path='/product/:id' element={<ProductDetailsPage />} />
-                    <Route path='/about' element={<AboutPage />} />
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/products" element={<ProductListPage />} />
+                    <Route path="/product/:id" element={<ProductDetailsPage />} />
+                    <Route path="/about" element={<AboutPage />} />
+                    {/* 404 Route */}
+                    <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
                 <PageFooter />
             </BrowserRouter>
