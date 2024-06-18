@@ -13,7 +13,7 @@ export const CartItem = ({ id }) => {
     
     return (
         <Stack direction="horizontal" gap={2} className={classes.stack}>
-            <img src={`../../../../../public/product_assets/${item.productName.split(" ").join("")}.png`} className={classes.cart_item_image} />
+            <img src={item.imageURLs[0]} className={classes.cart_item_image} />
             <div className="me-auto">
                 <div className={classes.product_name}>
                     {item.productName}
