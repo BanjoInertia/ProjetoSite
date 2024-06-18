@@ -11,7 +11,7 @@ export const ShoppingCartContext = createContext(initialContext);
 
 export const ShoppingCartProvider = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [cartItems, setCartItems] = useLocalStorage('cartItems', []);
+  const [cartItems, setCartItems] = useLocalStorage([]);
 
   const cartQuantity = cartItems.reduce((quantity, item) => item.quantity + quantity, 0);
 
@@ -29,7 +29,9 @@ export const ShoppingCartProvider = ({ children }) => {
         return [...currItems, { id, quantity: 1 }];
       } else {
         const updatedItems = [...currItems];
-        updatedItems[existingIndex].quantity += 1;
+        if (updatedItems[existingIndex].quantity < 1) {
+          updatedItems[existingIndex].quantity += 1;
+        }
         return updatedItems;
       }
     });

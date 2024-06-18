@@ -3,10 +3,10 @@
         "id": 0,
         "imageURLs": 
         [
-            "../src/assets/product_assets/SoulFighterJhin.png",
-            "../src/assets/product_assets/Slide2.png",
-            "../src/assets/product_assets/Slide3.png",
-            "../src/assets/product_assets/Slide4.png"
+            "./product_assets/SoulFighterJhin.png",
+            "./product_assets/Slide2.png",
+            "./product_assets/Slide3.png",
+            "./product_assets/Slide4.png"
         ],
         "productName": "Soul Fighter Jhin",
         "description": "Embrace a fusion of modern style and timeless sophistication. Elevate your gaming presence with its refined allure and unbeatable charisma.",
@@ -17,10 +17,10 @@
         "id": 1,
         "imageURLs": 
         [
-            "../src/assets/product_assets/DarkCosmicJhin.png",
-            "../src/assets/product_assets/Slide2.png",
-            "../src/assets/product_assets/Slide3.png",
-            "../src/assets/product_assets/Slide4.png"
+            "./product_assets/DarkCosmicJhin.png",
+            "./product_assets/Slide2.png",
+            "./product_assets/Slide3.png",
+            "./product_assets/Slide4.png"
         ],
         "productName": "Dark Cosmic Jhin",
         "description": "Embrace a fusion of modern style and timeless sophistication. Elevate your gaming presence with its refined allure and unbeatable charisma.",
@@ -31,10 +31,10 @@
         "id": 2,
         "imageURLs": 
         [
-            "../src/assets/product_assets/EmpyreanJhin.png",
-            "../src/assets/product_assets/Slide2.png",
-            "../src/assets/product_assets/Slide3.png",
-            "../src/assets/product_assets/Slide4.png"
+            "./product_assets/EmpyreanJhin.png",
+            "./product_assets/Slide2.png",
+            "./product_assets/Slide3.png",
+            "./product_assets/Slide4.png"
         ],
         "productName": "Empyrean Jhin",
         "description": "Embrace a fusion of modern style and timeless sophistication. Elevate your gaming presence with its refined allure and unbeatable charisma.",
@@ -45,10 +45,10 @@
         "id": 3,
         "imageURLs": 
         [
-            "../src/assets/product_assets/PROJECTJhin.png",
-            "../src/assets/product_assets/Slide2.png",
-            "../src/assets/product_assets/Slide3.png",
-            "../src/assets/product_assets/Slide4.png"
+            "./product_assets/PROJECTJhin.png",
+            "./product_assets/Slide2.png",
+            "./product_assets/Slide3.png",
+            "./product_assets/Slide4.png"
         ],
         "productName": "PROJECT Jhin",
         "description": "Embrace a fusion of modern style and timeless sophistication. Elevate your gaming presence with its refined allure and unbeatable charisma.",
@@ -59,10 +59,10 @@
         "id": 4,
         "imageURLs": 
         [
-            "../src/assets/product_assets/OldWestJhin.png",
-            "../src/assets/product_assets/Slide2.png",
-            "../src/assets/product_assets/Slide3.png",
-            "../src/assets/product_assets/Slide4.png"
+            "./product_assets/OldWestJhin.png",
+            "./product_assets/Slide2.png",
+            "./product_assets/Slide3.png",
+            "./product_assets/Slide4.png"
         ],
         "productName": "Old West Jhin",
         "description": "Embrace a fusion of modern style and timeless sophistication. Elevate your gaming presence with its refined allure and unbeatable charisma.",
@@ -73,10 +73,10 @@
         "id": 5,
         "imageURLs": 
         [
-            "../src/assets/product_assets/ShanHaiScrollsJhin.png",
-            "../src/assets/product_assets/Slide2.png",
-            "../src/assets/product_assets/Slide3.png",
-            "../src/assets/product_assets/Slide4.png"
+            "./product_assets/ShanHaiScrollsJhin.png",
+            "./product_assets/Slide2.png",
+            "./product_assets/Slide3.png",
+            "./product_assets/Slide4.png"
         ],
         "productName": "Shan Hai Scrolls Jhin",
         "description": "Embrace a fusion of modern style and timeless sophistication. Elevate your gaming presence with its refined allure and unbeatable charisma.",
@@ -87,10 +87,10 @@
         "id": 6,
         "imageURLs": 
         [
-            "../src/assets/product_assets/BloodMoonJhin.png",
-            "../src/assets/product_assets/Slide2.png",
-            "../src/assets/product_assets/Slide3.png",
-            "../src/assets/product_assets/Slide4.png"
+            "./product_assets/BloodMoonJhin.png",
+            "./product_assets/Slide2.png",
+            "./product_assets/Slide3.png",
+            "./product_assets/Slide4.png"
         ],
         "productName": "Blood Moon Jhin",
         "description": "Embrace a fusion of modern style and timeless sophistication. Elevate your gaming presence with its refined allure and unbeatable charisma.",
@@ -101,10 +101,10 @@
         "id": 7,
         "imageURLs": 
         [
-            "../src/assets/product_assets/BewitchingPoppy.png",
-            "../src/assets/product_assets/Slide2.png",
-            "../src/assets/product_assets/Slide3.png",
-            "../src/assets/product_assets/Slide4.png"
+            "./product_assets/BewitchingPoppy.png",
+            "./product_assets/Slide2.png",
+            "./product_assets/Slide3.png",
+            "./product_assets/Slide4.png"
         ],
         "productName": "Bewitching Poppy",
         "description": "Embrace a fusion of modern style and timeless sophistication. Elevate your gaming presence with its refined allure and unbeatable charisma.",
@@ -115,10 +115,10 @@
         "id": 8,
         "imageURLs": 
         [
-            "../src/assets/product_assets/AstronautPoppy.png",
-            "../src/assets/product_assets/Slide2.png",
-            "../src/assets/product_assets/Slide3.png",
-            "../src/assets/product_assets/Slide4.png"
+            "./product_assets/AstronautPoppy.png",
+            "./product_assets/Slide2.png",
+            "./product_assets/Slide3.png",
+            "./product_assets/Slide4.png"
         ],
         "productName": "Astronaut Poppy",
         "description": "Embrace a fusion of modern style and timeless sophistication. Elevate your gaming presence with its refined allure and unbeatable charisma.",
@@ -129,10 +129,10 @@
         "id": 9,
         "imageURLs": 
         [
-            "../src/assets/product_assets/CafeCutiesPoppy.png",
-            "../src/assets/product_assets/Slide2.png",
-            "../src/assets/product_assets/Slide3.png",
-            "../src/assets/product_assets/Slide4.png"
+            "./product_assets/CafeCutiesPoppy.png",
+            "./product_assets/Slide2.png",
+            "./product_assets/Slide3.png",
+            "./product_assets/Slide4.png"
         ],
         "productName": "Cafe Cuties Poppy",
         "description": "Embrace a fusion of modern style and timeless sophistication. Elevate your gaming presence with its refined allure and unbeatable charisma.",
@@ -143,10 +143,10 @@
         "id": 10,
         "imageURLs": 
         [
-            "../src/assets/product_assets/HextechPoppy.png",
-            "../src/assets/product_assets/Slide2.png",
-            "../src/assets/product_assets/Slide3.png",
-            "../src/assets/product_assets/Slide4.png"
+            "./product_assets/HextechPoppy.png",
+            "./product_assets/Slide2.png",
+            "./product_assets/Slide3.png",
+            "./product_assets/Slide4.png"
         ],
         "productName": "Hextech Poppy",
         "description": "Embrace a fusion of modern style and timeless sophistication. Elevate your gaming presence with its refined allure and unbeatable charisma.",
@@ -157,10 +157,10 @@
         "id": 11,
         "imageURLs": 
         [
-            "../src/assets/product_assets/StarGuardianPoppy.png",
-            "../src/assets/product_assets/Slide2.png",
-            "../src/assets/product_assets/Slide3.png",
-            "../src/assets/product_assets/Slide4.png"
+            "./product_assets/StarGuardianPoppy.png",
+            "./product_assets/Slide2.png",
+            "./product_assets/Slide3.png",
+            "./product_assets/Slide4.png"
         ],
         "productName": "Star Guardian Poppy",
         "description": "Embrace a fusion of modern style and timeless sophistication. Elevate your gaming presence with its refined allure and unbeatable charisma.",
@@ -171,10 +171,10 @@
         "id": 12,
         "imageURLs": 
         [
-            "../src/assets/product_assets/SpaceGrooveBlitzcrank.png",
-            "../src/assets/product_assets/Slide2.png",
-            "../src/assets/product_assets/Slide3.png",
-            "../src/assets/product_assets/Slide4.png"
+            "./product_assets/SpaceGrooveBlitzcrank.png",
+            "./product_assets/Slide2.png",
+            "./product_assets/Slide3.png",
+            "./product_assets/Slide4.png"
         ],
         "productName": "Space Groove Blitzcrank",
         "description": "Embrace a fusion of modern style and timeless sophistication. Elevate your gaming presence with its refined allure and unbeatable charisma.",
@@ -185,10 +185,10 @@
         "id": 13,
         "imageURLs": 
         [
-            "../src/assets/product_assets/VictoriousBlitzcrank.png",
-            "../src/assets/product_assets/Slide2.png",
-            "../src/assets/product_assets/Slide3.png",
-            "../src/assets/product_assets/Slide4.png"
+            "./product_assets/VictoriousBlitzcrank.png",
+            "./product_assets/Slide2.png",
+            "./product_assets/Slide3.png",
+            "./product_assets/Slide4.png"
         ],
         "productName": "Victorious Blitzcrank",
         "description": "Embrace a fusion of modern style and timeless sophistication. Elevate your gaming presence with its refined allure and unbeatable charisma.",
@@ -199,10 +199,10 @@
         "id": 14,
         "imageURLs": 
         [
-            "../src/assets/product_assets/WitchsBrewBlitzcrank.png",
-            "../src/assets/product_assets/Slide2.png",
-            "../src/assets/product_assets/Slide3.png",
-            "../src/assets/product_assets/Slide4.png"
+            "./product_assets/WitchsBrewBlitzcrank.png",
+            "./product_assets/Slide2.png",
+            "./product_assets/Slide3.png",
+            "./product_assets/Slide4.png"
         ],
         "productName": "Witch's Brew Blitzcrank",
         "description": "Embrace a fusion of modern style and timeless sophistication. Elevate your gaming presence with its refined allure and unbeatable charisma.",
@@ -213,10 +213,10 @@
         "id": 15,
         "imageURLs": 
         [
-            "../src/assets/product_assets/RustyBlitzcrank.png",
-            "../src/assets/product_assets/Slide2.png",
-            "../src/assets/product_assets/Slide3.png",
-            "../src/assets/product_assets/Slide4.png"
+            "./product_assets/RustyBlitzcrank.png",
+            "./product_assets/Slide2.png",
+            "./product_assets/Slide3.png",
+            "./product_assets/Slide4.png"
         ],
         "productName": "Rusty Blitzcrank",
         "description": "Embrace a fusion of modern style and timeless sophistication. Elevate your gaming presence with its refined allure and unbeatable charisma.",
@@ -227,10 +227,10 @@
         "id": 16,
         "imageURLs": 
         [
-            "../src/assets/product_assets/RiotBlitzcrank.png",
-            "../src/assets/product_assets/Slide2.png",
-            "../src/assets/product_assets/Slide3.png",
-            "../src/assets/product_assets/Slide4.png"
+            "./product_assets/RiotBlitzcrank.png",
+            "./product_assets/Slide2.png",
+            "./product_assets/Slide3.png",
+            "./product_assets/Slide4.png"
         ],
         "productName": "Riot Blitzcrank",
         "description": "Embrace a fusion of modern style and timeless sophistication. Elevate your gaming presence with its refined allure and unbeatable charisma.",
@@ -241,10 +241,10 @@
         "id": 17,
         "imageURLs": 
         [
-            "../src/assets/product_assets/Beezcrank.png",
-            "../src/assets/product_assets/Slide2.png",
-            "../src/assets/product_assets/Slide3.png",
-            "../src/assets/product_assets/Slide4.png"
+            "./product_assets/Beezcrank.png",
+            "./product_assets/Slide2.png",
+            "./product_assets/Slide3.png",
+            "./product_assets/Slide4.png"
         ],
         "productName": "Beezcrank",
         "description": "Embrace a fusion of modern style and timeless sophistication. Elevate your gaming presence with its refined allure and unbeatable charisma.",

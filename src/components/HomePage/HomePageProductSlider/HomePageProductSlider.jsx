@@ -8,7 +8,7 @@ import classes from "./HomePageProductSlider.module.css"
 
 import products from "../../../../public/data.json"
 import { Link } from 'react-router-dom';
-import { formatCurrancy } from '../../../utilities/formatCurrancy';
+import { formatCurrency } from '../../../utilities/formatCurrency';
 
 export const HomePageProductSlider = () => {
     const shuffledProducts = products.sort(() => Math.random() - 0.5);
@@ -49,7 +49,7 @@ export const HomePageProductSlider = () => {
                         <Link className={classes.cards} to={`/product/${product.id}`} >
                             <img className={classes.img} src={product.imageURLs[0]} alt={product.productName} />
                             <p className={classes.product_name}>{product.productName}</p>
-                            <p>{formatCurrancy(product.price)}</p>
+                            <p>{formatCurrency(product.price)}</p>
                         </Link>
                     </SwiperSlide>
                 ))}

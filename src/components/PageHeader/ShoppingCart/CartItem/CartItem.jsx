@@ -1,4 +1,4 @@
-import { formatCurrancy } from "../../../../utilities/formatCurrancy"
+import { formatCurrency } from "../../../../utilities/formatCurrency"
 import { Button, Stack } from "react-bootstrap"
 import Products from "../../../../../public/data.json"
 import classes from "./CartItem.module.css"
@@ -13,13 +13,13 @@ export const CartItem = ({ id }) => {
     
     return (
         <Stack direction="horizontal" gap={2} className={classes.stack}>
-            <img src={item.imageURLs[0]} className={classes.cart_item_image} />
+            <img src={`../../../../../public/product_assets/${item.productName.split(" ").join("")}.png`} className={classes.cart_item_image} />
             <div className="me-auto">
                 <div className={classes.product_name}>
                     {item.productName}
                 </div>
                 <div className={classes.product_price}>
-                    {formatCurrancy(item.price)}
+                    {formatCurrency(item.price)}
                 </div>
             </div>
             <Button variant="danger" onClick={() => removeFromCart(item.id)}>&times;</Button>

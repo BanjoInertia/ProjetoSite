@@ -1,4 +1,4 @@
-import { ProductDetails } from "../components/ProductDetailsPage/ProductDetails/ProductDetails"
+import { ProductDetails } from "../components/ProductDetailsPage/ProductDetails";
 import { useParams } from "react-router-dom";
 
 export const ProductDetailsPage = () => {
@@ -8,5 +8,5 @@ export const ProductDetailsPage = () => {
         <>
             <ProductDetails id={id} />
         </>
-    )
-}
+    );
+};

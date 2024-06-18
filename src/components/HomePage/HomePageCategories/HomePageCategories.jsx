@@ -1,9 +1,9 @@
 import classes from "./HomePageCategories.module.css"
 import { Link } from "react-router-dom"
 
-import legendaryImg from "../../../assets/product_assets/SoulFighterJhin.png"
-import epicImg from "../../../assets/product_assets/BewitchingPoppy.png"
-import commonImg from "../../../assets/product_assets/SpaceGrooveBlitzcrank.png"
+import legendaryImg from "../../../../public/product_assets/SoulFighterJhin.png"
+import epicImg from "../../../../public/product_assets/BewitchingPoppy.png"
+import commonImg from "../../../../public/product_assets/SpaceGrooveBlitzcrank.png"
 
 export const HomePageCategories = () => {
     return (

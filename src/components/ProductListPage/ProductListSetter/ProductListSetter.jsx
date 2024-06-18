@@ -1,10 +1,10 @@
+import { useState, useEffect, useMemo } from 'react';
 import PropTypes from 'prop-types';
 import classes from "./ProductListSetter.module.css";
 import img3 from "../../../assets/Mythic_Skin.png";
 import img2 from "../../../assets/Legendary_Skin.png";
 import img1 from "../../../assets/Epic_Skin.png";
 import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 
 export const ProductListSetter = ({ filteredProducts, searchedProduct }) => {
     const [searchedData, setSearchedData] = useState([]);
@@ -19,9 +19,11 @@ export const ProductListSetter = ({ filteredProducts, searchedProduct }) => {
         return rarityImages[rarity] || null;
     };
 
-    const sortedProducts = filteredProducts.slice().sort((a, b) => {
-        return a.productName.localeCompare(b.productName);
-    });
+    const sortedProducts = useMemo(() => {
+        return filteredProducts.slice().sort((a, b) => {
+            return a.productName.localeCompare(b.productName);
+        });
+    }, [filteredProducts]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -31,7 +33,7 @@ export const ProductListSetter = ({ filteredProducts, searchedProduct }) => {
 
         fetchData();
     }, [sortedProducts]);
-    
+
     const filteredData = searchedData
         .filter((el) => {
             if (searchedProduct === '') {
@@ -52,7 +54,9 @@ export const ProductListSetter = ({ filteredProducts, searchedProduct }) => {
                 return a.productName.localeCompare(b.productName);
             }
         });
-    
+
+    console.log(filteredData)
+
     return (
         <>
             <h1 className={classes.products_title}>Products</h1>
