@@ -3,7 +3,7 @@
         "id": 0,
         "imageURLs": 
         [
-            "../src/assets/product_assets/SoulFighterJhin.png",
+            "SoulFighterJhin.png",
             "../src/assets/product_assets/Slide2.png",
             "../src/assets/product_assets/Slide3.png",
             "../src/assets/product_assets/Slide4.png"

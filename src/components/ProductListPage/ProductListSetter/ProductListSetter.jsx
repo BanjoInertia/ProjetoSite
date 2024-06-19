@@ -67,7 +67,7 @@ export const ProductListSetter = ({ filteredProducts, searchedProduct }) => {
                     {filteredData.map((product, index) => (
                         <div key={index}>
                             <Link to={`/product/${product.id}`} >
-                                <img className={classes.products_img} src={product.imageURLs[0]} alt={product.productName} />
+                                <img className={classes.products_img} src={`../../../assets/product_assets/${product.imageURLs[0]}`} alt={product.productName} />
                                 <div className={classes.products_info_container}>
                                     <div className={classes.products_info}>
                                         <p>{product.productName}</p>  
