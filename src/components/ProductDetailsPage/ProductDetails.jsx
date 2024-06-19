@@ -23,9 +23,7 @@ export const ProductDetails = ({ id }) => {
 
     return (
         <div className={classes.details_container}>
-
-            <ProductDetailsImageSlider imageURLs={product.imageURLs} />
-
+            <ProductDetailsImageSlider product={product} />
             <div className={classes.product_information_container}>
                 <h2 className={classes.product_name}>{product.productName}</h2>           
                 <div className={classes.product_information}>
