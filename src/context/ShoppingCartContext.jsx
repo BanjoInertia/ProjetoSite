@@ -11,7 +11,7 @@ export const ShoppingCartContext = createContext(initialContext);
 
 export const ShoppingCartProvider = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [cartItems, setCartItems] = useLocalStorage('cartItems', []);
+  const [cartItems, setCartItems] = useLocalStorage([]);
 
   const cartQuantity = cartItems.reduce((quantity, item) => item.quantity + quantity, 0);
 
