@@ -5,8 +5,10 @@ import { ProductDetailsImageSlider } from './ProductDetailsImageSlider/ProductDe
 import { useEffect } from "react";
 import { formatCurrency } from '../../utilities/formatCurrency';
 import { useShoppingCart } from '../../context/useShoppingCart';
+import { useParams } from 'react-router-dom';
 
-export const ProductDetails = ({ id }) => {
+export const ProductDetails = () => {
+    const { id } = useParams()
     const productId = parseInt(id);
 
     const product = data.find(item => item.id === productId);

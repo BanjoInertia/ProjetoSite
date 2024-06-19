@@ -9,6 +9,8 @@ export const CartItem = ({ id }) => {
     const { removeFromCart } = useShoppingCart()
     const item = Products.find(item => item.id === id)
 
+    console.log(item);
+
     if (item === null) return null
     
     return (
