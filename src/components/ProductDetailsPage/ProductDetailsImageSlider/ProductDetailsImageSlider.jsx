@@ -26,7 +26,7 @@ export const ProductDetailsImageSlider = ({ product }) => {
                 {
                     images.map((item, index) => (
                         <span key={index}>
-                            <img className={classes.img} src={`../../../../public/${item}`} alt={`Image ${index + 1}`} />
+                            <img className={classes.img} src={item} alt={`Image ${index + 1}`} />
                         </span>
                     ))
                 }
