@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useEffect, useState, useRef } from "react";
 import classes from "./DropdownRarityFilter.module.css";
-import data from "../../../../../public/data.json";
+import data from "../../../../../data/data.json";
 
 export const DropdownRarityFilter = ({ setFilteredProducts, initialRarity }) => {
     const [products, setProducts] = useState([]);

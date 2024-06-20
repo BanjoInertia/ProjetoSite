@@ -1,4 +1,4 @@
-import data from '../../../public/data.json';
+import data from '../../../data/data.json';
 import classes from "./ProductDetails.module.css"
 import PropTypes from 'prop-types';
 import { ProductDetailsImageSlider } from './ProductDetailsImageSlider/ProductDetailsImageSlider';

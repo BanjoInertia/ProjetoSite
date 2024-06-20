@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 
 import classes from "./HomePageProductSlider.module.css"
 
-import products from "../../../../public/data.json"
+import products from "../../../../data/data.json"
 import { Link } from 'react-router-dom';
 import { formatCurrency } from '../../../utilities/formatCurrency';
 

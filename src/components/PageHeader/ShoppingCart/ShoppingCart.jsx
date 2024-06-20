@@ -4,7 +4,7 @@ import { formatCurrency } from '../../../utilities/formatCurrency';
 import { useShoppingCart } from '../../../context/useShoppingCart';
 
 import PropTypes from 'prop-types';
-import Products from "../../../../public/data.json";
+import Products from "../../../../data/data.json";
 import "./ShoppingCart.scss";
 
 export const ShoppingCart = ({ isOpen }) => {
