@@ -16,7 +16,7 @@ export const PageFooter = () => {
                     <a href="https://github.com/BanjoInertia" target="_blank">
                         <img src={LinkedinIcon} alt="Linkedin" />
                     </a>
-                    <a href="https://github.com/BanjoInertia" target="_blank">
+                    <a href="https://portifolio-banjo-inertia.netlify.app" target="_blank">
                         <img src={PortifolioIcon} alt="Portifolio" />
                     </a>
                 </div>
